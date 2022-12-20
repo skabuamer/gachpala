@@ -1,0 +1,339 @@
+/* 
+
+Master Stylesheet
+----------------------
+
+Template Name : 
+Description : 
+Author Name : Shaikh Abu Amer
+Author URL : 
+Version : 1.0
+
+
+Table of Content
+-----------------------
+
+1. Typography
+2. Navigation
+3.
+4.
+5.
+6.
+
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+:root {
+  --primary-clr: #519c5b;
+  --secondary-clr: #2b5c3f;
+  --white: #fff;
+  --black: #000;
+  /* --- Fonts --- */
+  --font-primary: "Roboto", sans-serif;
+  --fs-xl: 70px;
+  /* --- --- */
+  --transition: 0.4s ease;
+}
+
+@media screen and (max-width: 1399px) {
+  :root {
+    --fs-xl: 65px;
+  }
+}
+/*-----------------------------------------------Typography-----------------------------------------------*/
+h1 {
+  font-size: var(--fs-xl);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  background: var(--white);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.btn-custom-1 {
+  display: inline-block;
+  text-decoration: none;
+  background-image: linear-gradient(to right bottom, var(--primary-clr), var(--secondary-clr));
+  color: var(--white);
+  height: 55px;
+  padding: 0 32px;
+  line-height: 57px;
+  border-radius: 10px;
+  font-size: 20px;
+  position: relative;
+  transition: var(--transition);
+  z-index: 1;
+}
+.btn-custom-1::before {
+  content: "";
+  background-image: linear-gradient(to left top, var(--primary-clr), var(--secondary-clr));
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0;
+  transition: var(--transition);
+}
+.btn-custom-1:hover {
+  color: var(--white);
+}
+.btn-custom-1:hover::before {
+  opacity: 1;
+}
+.btn-custom-1 i {
+  margin-left: 5px;
+}
+@media screen and (max-width: 1199px) {
+  .btn-custom-1 {
+    font-size: 18px;
+    padding: 0 24px;
+    height: 50px;
+    line-height: 52px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .btn-custom-1 {
+    font-size: 18px;
+    padding: 0 24px;
+  }
+}
+
+.btn-custom-2 {
+  padding: 0 32px;
+  border: 2px solid var(--secondary-clr);
+  height: 55px;
+  display: inline-block;
+  line-height: 53px;
+  text-transform: capitalize;
+  border-radius: 10px;
+  color: var(--secondary-clr);
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+}
+.btn-custom-2 i {
+  margin-left: 5px;
+}
+.btn-custom-2::before {
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0;
+  transition: var(--transition);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-image: linear-gradient(to left top, var(--primary-clr), var(--secondary-clr));
+}
+.btn-custom-2:hover {
+  color: var(--white);
+}
+.btn-custom-2:hover::before {
+  opacity: 1;
+}
+
+header {
+  padding: 15px 0;
+  background: #f8f8f8;
+}
+
+.navbar-nav {
+  column-gap: 40px;
+}
+.navbar-nav .nav-item a {
+  color: var(--secondary-clr);
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    width: 185px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .logo {
+    width: 135px;
+  }
+}
+
+.btn-hamburger {
+  background-image: linear-gradient(to right bottom, var(--primary-clr), var(--secondary-clr));
+  width: 50px;
+  height: 50px;
+  color: var(--white);
+  font-size: 25px;
+  scale: -1 1;
+  border: none;
+  position: relative;
+  z-index: 1;
+  transition: var(--transition);
+  padding: 0;
+  line-height: 50px;
+}
+.btn-hamburger::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to left top, var(--primary-clr), var(--secondary-clr));
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0.375rem;
+  transition: var(--transition);
+  z-index: -1;
+}
+.btn-hamburger:hover {
+  color: var(--white);
+}
+.btn-hamburger:hover::before {
+  opacity: 1;
+}
+@media screen and (max-width: 575px) {
+  .btn-hamburger {
+    width: 42px;
+    height: 42px;
+    font-size: 22px;
+    line-height: 42px;
+  }
+}
+
+.btn-check:checked + .btn-hamburger,
+.btn-hamburger.active,
+.btn-hamburger.show,
+.btn-hamburger:first-child:active,
+:not(.btn-check) + .btn-hamburger:active {
+  color: var(--white);
+}
+
+.submenu {
+  position: absolute;
+  list-style: none;
+  top: 100%;
+  background: #2d5f40;
+  padding: 0;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: var(--transition);
+}
+.submenu .nav-item {
+  box-shadow: 0 10px 10px rgba(34, 52, 36, 0.3490196078);
+  border-radius: 5px;
+}
+.submenu .nav-item a {
+  color: var(--white);
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.dropdown-btn i {
+  transform: rotate(0deg);
+  transition: var(--transition);
+}
+.dropdown-btn:hover i {
+  transform: rotate(180deg);
+}
+.dropdown-btn:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/*-----------------------------------------------HERO STLYES-----------------------------------------------*/
+#hero-section {
+  padding: 120px 0;
+  background: #f8f8f8;
+}
+
+.hero-content {
+  row-gap: 100px;
+  height: 100%;
+}
+.hero-content-bottom {
+  gap: 40px;
+}
+.hero-content__title {
+  margin-bottom: 27px;
+}
+.hero-content__txt {
+  margin-bottom: 36px;
+  font-size: 18px;
+}
+
+.single-stat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.single-stat__img {
+  background: var(--secondary-clr);
+  border-radius: 50%;
+}
+.single-stat__details {
+  display: flex;
+  flex-direction: column;
+}
+.single-stat__number {
+  font-size: 35px;
+  line-height: 45px;
+  color: var(--primary-clr);
+}
+.single-stat__name {
+  text-transform: uppercase;
+}
+
+.hero-btns {
+  gap: 20px;
+}
+
+.hero-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.hero-img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 270px;
+  height: 270px;
+  outline: 1px solid #fff;
+  outline-offset: -10px;
+}
+.hero-img--1 {
+  border-bottom-right-radius: 0;
+}
+.hero-img--2 {
+  border-bottom-left-radius: 0;
+}
+.hero-img--3 {
+  border-top-right-radius: 0;
+}
+.hero-img--4 {
+  border-top-left-radius: 0;
+}
+
+.hero-badge {
+  left: 0;
+}/*# sourceMappingURL=style.css.map */

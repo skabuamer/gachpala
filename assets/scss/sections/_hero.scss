@@ -1,0 +1,90 @@
+/*-----------------------------------------------HERO STLYES-----------------------------------------------*/
+#hero-section {
+    padding: 120px 0;
+    background: #f8f8f8;
+}
+.hero-content {
+    row-gap: 100px;
+    height: 100%;
+
+    &-top {
+    }
+
+    &-bottom {
+        gap: 40px;
+    }
+
+    &__title {
+        margin-bottom: 27px;
+    }
+
+    &__txt {
+        margin-bottom: 36px;
+        font-size: 18px;
+    }
+}
+
+.single-stat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__img {
+        background: var(--secondary-clr);
+        border-radius: 50%;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__number {
+        font-size: 35px;
+        line-height: 45px;
+        color: var(--primary-clr);
+    }
+
+    &__name {
+        text-transform: uppercase;
+    }
+}
+
+.hero-btns {
+    gap: 20px;
+}
+
+.hero-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.hero-img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 270px;
+    height: 270px;
+    outline: 1px solid #fff;
+    outline-offset: -10px;
+
+    &--1 {
+        border-bottom-right-radius: 0;
+    }
+
+    &--2 {
+        border-bottom-left-radius: 0;
+    }
+
+    &--3 {
+        border-top-right-radius: 0;
+    }
+
+    &--4 {
+        border-top-left-radius: 0;
+    }
+}
+
+.hero-badge {
+    left: 0;
+}

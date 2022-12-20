@@ -1,0 +1,19 @@
+:root {
+    --primary-clr: #519c5b;
+    --secondary-clr: #2b5c3f;
+    --white: #fff;
+    --black: #000;
+
+    /* --- Fonts --- */
+    --font-primary: "Roboto", sans-serif;
+    --fs-xl: 70px;
+
+    /* --- --- */
+    --transition: 0.4s ease;
+}
+
+@include xl {
+    :root {
+        --fs-xl: 65px;
+    }
+}

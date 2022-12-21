@@ -17,3 +17,33 @@
         --fs-xl: 65px;
     }
 }
+
+@include lg {
+    :root {
+        --fs-xl: 55px;
+    }
+}
+
+@include md {
+    :root {
+        --fs-xl: 50px;
+    }
+}
+
+@include sm {
+    :root {
+        --fs-xl: 40px;
+    }
+}
+
+@include xs {
+    :root {
+        --fs-xl: 38px;
+    }
+}
+
+@include xxs {
+    :root {
+        --fs-xl: 30px;
+    }
+}

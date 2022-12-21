@@ -1,26 +1,87 @@
 /*-----------------------------------------------HERO STLYES-----------------------------------------------*/
 #hero-section {
     padding: 120px 0;
-    background: #f8f8f8;
+    background-image: url(../img/bg/banner-bg-2.jpg);
+    overflow: hidden;
+    position: relative;
+
+    > .container {
+        &::before {
+            @include before;
+            width: 233px;
+            height: 210%;
+            background: url(../img/banner/banner-leaf.png) no-repeat;
+            rotate: 195deg;
+            transform-origin: center;
+            filter: opacity(25%);
+            top: -35px;
+            left: -310px;
+        }
+
+        @include xl {
+            &::before {
+                content: none;
+            }
+        }
+    }
+
+    @include sm {
+        padding: 60px 0;
+    }
+
+    @include xxs {
+        padding: 30px 0;
+    }
 }
 .hero-content {
     row-gap: 100px;
     height: 100%;
 
+    @include lg {
+        row-gap: 70px;
+    }
+
+    @include md {
+        row-gap: 55px;
+    }
+
     &-top {
+        @include md {
+            text-align: center;
+        }
     }
 
     &-bottom {
         gap: 40px;
+
+        @include md {
+            justify-content: center;
+        }
+
+        @include xxs {
+            gap: 25px;
+        }
     }
 
     &__title {
         margin-bottom: 27px;
+
+        @include lg {
+            margin-bottom: 22px;
+        }
     }
 
     &__txt {
         margin-bottom: 36px;
         font-size: 18px;
+
+        @include lg {
+            margin-bottom: 31px;
+        }
+
+        @include xxs {
+            font-size: 16px;
+        }
     }
 }
 
@@ -29,20 +90,44 @@
     align-items: center;
     gap: 10px;
 
+    @include lg {
+        flex-direction: column;
+    }
+
+    @include md {
+        flex-direction: row;
+    }
+
+    @include xs {
+        flex-direction: column;
+    }
+
     &__img {
         background: var(--secondary-clr);
         border-radius: 50%;
+        width: 64px;
+        height: 64px;
+        object-fit: cover;
+        max-width: none;
     }
 
     &__details {
         display: flex;
         flex-direction: column;
+        @include lg {
+            align-items: center;
+        }
     }
 
     &__number {
         font-size: 35px;
         line-height: 45px;
         color: var(--primary-clr);
+
+        @include xxs {
+            font-size: 27px;
+            line-height: 37px;
+        }
     }
 
     &__name {
@@ -52,12 +137,34 @@
 
 .hero-btns {
     gap: 20px;
+
+    @include md {
+        justify-content: center;
+    }
+
+    @include xxs {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
 
 .hero-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
+    width: fit-content;
+
+    @include lg {
+        gap: 15px;
+    }
+
+    @include md {
+        margin: 0 auto;
+    }
+
+    @include xxs {
+        gap: 10px;
+    }
 }
 
 .hero-img {
@@ -67,6 +174,22 @@
     height: 270px;
     outline: 1px solid #fff;
     outline-offset: -10px;
+
+    @include lg {
+        width: 230px;
+        height: 230px;
+    }
+
+    @include xs {
+        width: 225px;
+        height: 225px;
+    }
+
+    @include xs {
+        width: 145px;
+        height: 145px;
+        outline-offset: -5px;
+    }
 
     &--1 {
         border-bottom-right-radius: 0;

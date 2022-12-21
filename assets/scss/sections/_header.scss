@@ -87,6 +87,7 @@ header {
     visibility: hidden;
     transform: translateY(-10px);
     transition: var(--transition);
+    z-index: 1;
 
     .nav-item {
         box-shadow: 0 10px 10px #22342459;

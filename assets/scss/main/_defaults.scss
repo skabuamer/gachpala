@@ -13,3 +13,8 @@ a {
     transition: var(--transition);
     text-decoration: none;
 }
+.bg-defaults {
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

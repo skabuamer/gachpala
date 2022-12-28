@@ -1,5 +1,5 @@
 /*-----------------------------------------------Typography-----------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 @include xxl {
 }
@@ -24,4 +24,29 @@
 
 h1 {
     font-size: var(--fs-xl);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+h4 {
+    font-size: var(--fs-h4);
+}
+
+h5 {
+    font-size: var(--fs-h5);
+}
+
+h6 {
+    font-size: var(--fs-h6);
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
 }

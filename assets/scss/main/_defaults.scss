@@ -5,6 +5,10 @@ body {
     background: var(--white);
 }
 
+ul {
+    padding: 0;
+}
+
 img {
     max-width: 100%;
 }
@@ -17,4 +21,53 @@ a {
     background-position: 0 0;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.section-spacing {
+    padding: 120px 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 100px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 135%;
+        left: 50%;
+        translate: -50% -120%;
+        background: #68b643;
+        height: 0.1px;
+        width: 230px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 165%;
+        left: 50%;
+        translate: -50% -120%;
+        background: url(../img/icon/leaf-icon.png) no-repeat center center;
+        height: 45px;
+        width: 60px;
+        background-size: 40px;
+        background-color: var(--white);
+    }
+}
+
+span.section-subtitle {
+    color: #30694b;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+h2.section-title {
+    text-transform: capitalize;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    color: #44504a;
 }

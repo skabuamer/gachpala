@@ -11,6 +11,8 @@
     position: relative;
     transition: var(--transition);
     z-index: 1;
+    text-transform: capitalize;
+    border: none;
 
     &::before {
         content: "";

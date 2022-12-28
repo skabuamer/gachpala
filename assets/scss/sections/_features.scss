@@ -1,0 +1,32 @@
+.features-section__img {
+    max-width: none;
+    width: 450px;
+    border-radius: 50%;
+    border-top-right-radius: 0;
+    outline: 1px solid var(--white);
+    outline-offset: -15px;
+    filter: brightness(0.8);
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+    margin-left: 60px;
+}
+
+.single-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+
+    &__img {
+        width: 80px;
+        height: 80px;
+        @include graident-primary-x;
+        padding: 20px;
+        border-radius: 50%;
+        outline: 1px solid var(--white);
+        outline-offset: -5px;
+    }
+}

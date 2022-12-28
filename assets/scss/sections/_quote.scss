@@ -1,0 +1,45 @@
+/*-----------------------------------------------QUOTE STLYES-----------------------------------------------*/
+#quote-section {
+    @include graident-primary-y;
+    padding: 80px 0;
+}
+
+.quote-section {
+    &__img {
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            outline: 1px solid #e1e1e1;
+            outline-offset: -10px;
+            border-radius: 50%;
+        }
+    }
+
+    &__vid {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        right: -100px;
+        border-radius: 50%;
+        translate: 0% -50%;
+    }
+
+    &__btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        border: none;
+        background: #3f7e4e;
+        color: #fff;
+        font-size: 50px;
+        padding: 50px;
+        border-radius: 50%;
+        width: 90%;
+        height: 90%;
+        opacity: 80%;
+    }
+}

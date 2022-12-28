@@ -6,6 +6,10 @@
     background-image: linear-gradient(to left top, var(--primary-clr), var(--secondary-clr));
 }
 
+@mixin graident-primary-y {
+    background-image: linear-gradient(to top, var(--primary-clr), var(--secondary-clr));
+}
+
 @mixin before {
     content: "";
     position: absolute;

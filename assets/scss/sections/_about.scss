@@ -1,0 +1,80 @@
+/*-----------------------------------------------ABOUT STLYES-----------------------------------------------*/
+.about-section {
+    &__left-content {
+        h3 {
+            color: #5b6560;
+            font-size: 35px;
+            font-weight: 700;
+            margin-bottom: 22px;
+        }
+
+        p {
+            color: #666666;
+            line-height: 30px;
+            margin-bottom: 28px;
+        }
+    }
+
+    &__badge-container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 40px;
+
+        img {
+            width: 120px;
+        }
+    }
+
+    &__video {
+        width: fit-content;
+        position: relative;
+
+        img {
+            max-width: none;
+            width: 460px;
+            border-radius: 50%;
+            border-top-left-radius: 0;
+            outline: 1px solid var(--white);
+            outline-offset: -15px;
+            filter: brightness(0.7);
+        }
+    }
+}
+
+span.highlighted-txt {
+    color: var(--white);
+    display: block;
+    padding: 20px;
+    margin: 15px -20px;
+    font-style: italic;
+    border-radius: 10px;
+    @include gradient-primary-x;
+}
+
+.about-section__video-popup-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    width: 65px;
+    height: 65px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: var(--primary-clr);
+    border: 1px solid var(--white);
+    padding: 5px;
+    box-sizing: content-box;
+    background-clip: content-box;
+    outline: 1px solid var(--secondary-clr);
+    outline-offset: -12px;
+    line-height: 65px;
+    text-align: center;
+    background-color: var(--white);
+
+    &:focus {
+        outline: 1px solid var(--secondary-clr);
+    }
+}

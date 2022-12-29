@@ -1,3 +1,4 @@
+/*-----------------------------------------------FEATURES STLYES-----------------------------------------------*/
 .features-section__img {
     max-width: none;
     width: 450px;
@@ -23,7 +24,7 @@
     &__img {
         width: 80px;
         height: 80px;
-        @include graident-primary-x;
+        @include gradient-primary-x;
         padding: 20px;
         border-radius: 50%;
         outline: 1px solid var(--white);

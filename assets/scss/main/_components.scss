@@ -1,7 +1,7 @@
 .btn-custom-1 {
     display: inline-block;
     text-decoration: none;
-    @include graident-primary-x;
+    @include gradient-primary-x;
     color: var(--white);
     height: 55px;
     padding: 0 32px;
@@ -16,7 +16,7 @@
 
     &::before {
         content: "";
-        @include graident-secondary-x;
+        @include gradient-secondary-x;
         position: absolute;
         left: 0;
         top: 0;
@@ -81,7 +81,7 @@
         transition: var(--transition);
         @include before;
         border-radius: 6px;
-        @include graident-secondary-x;
+        @include gradient-secondary-x;
     }
 
     &:hover {

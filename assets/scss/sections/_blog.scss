@@ -32,9 +32,10 @@
     &__author,
     &__date {
         text-transform: capitalize;
+        font-weight: 500;
+        color: var(--primary-clr);
         i {
             margin-right: 5px;
-            color: var(--primary-clr);
         }
     }
 

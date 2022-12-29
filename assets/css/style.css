@@ -32,7 +32,7 @@ Table of Content
   --font-primary: "Roboto", sans-serif;
   --fs-xl: 70px;
   --fs-h2: 35px;
-  --fs-h3: 25px;
+  --fs-h3: 30px;
   --fs-h4: 25px;
   --fs-h5: 25px;
   --fs-h6: 25px;
@@ -118,6 +118,10 @@ img {
 a {
   transition: var(--transition);
   text-decoration: none;
+}
+
+button {
+  border: none;
 }
 
 .bg-defaults {
@@ -283,6 +287,7 @@ h2.section-title {
   }
 }
 
+/*-----------------------------------------------HEADER STLYES-----------------------------------------------*/
 header {
   padding: 15px 0;
   background: #f8f8f8;
@@ -662,6 +667,177 @@ header {
   height: 90%;
   opacity: 80%;
 }
+.quote-section__txt {
+  color: #f3fff3;
+  position: relative;
+}
+.quote-section__txt p {
+  font-size: var(--fs-h4);
+  line-height: 40px;
+  font-weight: 300;
+  margin-bottom: 70px;
+}
+.quote-section__txt p::before {
+  content: "";
+  position: absolute;
+  top: -90px;
+  left: -90px;
+  width: 160px;
+  height: 160px;
+  background: url(../img/quote/quotation.png) no-repeat center center;
+  background-size: 160px;
+  opacity: 10%;
+}
+.quote-section__txt p::after {
+  content: "";
+  position: absolute;
+  bottom: -55px;
+  right: 45px;
+  width: 160px;
+  height: 160px;
+  background: url(../img/quote/signature.png) no-repeat center center;
+  background-size: 160px;
+}
+.quote-section__txt h5 {
+  width: fit-content;
+  position: relative;
+  padding-left: 90px;
+  margin: 0;
+  font-style: italic;
+  font-weight: 300;
+  color: #e7f0e8;
+}
+.quote-section__txt h5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: -35px;
+  height: 0.1px;
+  background: rgba(0, 0, 0, 0.25);
+}
+.quote-section__txt h5::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  translate: 0 -50%;
+  width: 80px;
+  height: 0.1px;
+  background: rgba(255, 255, 255, 0.64);
+}
+.quote-section__txt h5 small {
+  font-size: 16px;
+  padding-left: 10px;
+  margin-left: 10px;
+  font-style: normal;
+  border-left: 1px solid #e7f0e8;
+}
+
+/*-----------------------------------------------ABOUT STLYES-----------------------------------------------*/
+.about-section__left-content h3 {
+  color: #5b6560;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+.about-section__left-content p {
+  color: #666666;
+  line-height: 30px;
+  margin-bottom: 28px;
+}
+.about-section__badge-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+}
+.about-section__badge-container img {
+  width: 120px;
+}
+.about-section__video {
+  width: fit-content;
+  position: relative;
+}
+.about-section__video img {
+  max-width: none;
+  width: 460px;
+  border-radius: 50%;
+  border-top-left-radius: 0;
+  outline: 1px solid var(--white);
+  outline-offset: -15px;
+  filter: brightness(0.7);
+}
+
+span.highlighted-txt {
+  color: var(--white);
+  display: block;
+  padding: 20px;
+  margin: 15px -20px;
+  font-style: italic;
+  border-radius: 10px;
+  background-image: linear-gradient(to right bottom, var(--primary-clr), var(--secondary-clr));
+}
+
+.about-section__video-popup-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  width: 65px;
+  height: 65px;
+  font-size: 20px;
+  border-radius: 50%;
+  color: var(--primary-clr);
+  border: 1px solid var(--white);
+  padding: 5px;
+  box-sizing: content-box;
+  background-clip: content-box;
+  outline: 1px solid var(--secondary-clr);
+  outline-offset: -12px;
+  line-height: 65px;
+  text-align: center;
+  background-color: var(--white);
+}
+.about-section__video-popup-btn:focus {
+  outline: 1px solid var(--secondary-clr);
+}
+
+#cta-section {
+  padding: 30px 0;
+  background-image: url(../img/bg/deg-bg.jpg);
+  background-repeat: repeat;
+  background-size: 500px;
+  position: relative;
+  z-index: 1;
+}
+#cta-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 92%;
+  background-image: linear-gradient(to left top, var(--primary-clr), var(--secondary-clr));
+}
+#cta-section .btn-custom-1 {
+  border: 2px solid #dfdfdf;
+  line-height: 53px;
+}
+
+.cta-title {
+  margin-bottom: 0;
+  color: var(--white);
+}
 
 #achievement-section {
   padding: 80px 0;
@@ -721,6 +897,7 @@ header {
   color: #8d9591;
 }
 
+/*-----------------------------------------------FEATURES STLYES-----------------------------------------------*/
 .features-section__img {
   max-width: none;
   width: 450px;
@@ -779,10 +956,11 @@ header {
 }
 .single-blog__author, .single-blog__date {
   text-transform: capitalize;
+  font-weight: 500;
+  color: var(--primary-clr);
 }
 .single-blog__author i, .single-blog__date i {
   margin-right: 5px;
-  color: var(--primary-clr);
 }
 .single-blog__txt {
   text-align: justify;

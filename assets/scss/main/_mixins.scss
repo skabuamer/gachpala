@@ -1,12 +1,12 @@
-@mixin graident-primary-x {
+@mixin gradient-primary-x {
     background-image: linear-gradient(to right bottom, var(--primary-clr), var(--secondary-clr));
 }
 
-@mixin graident-secondary-x {
+@mixin gradient-secondary-x {
     background-image: linear-gradient(to left top, var(--primary-clr), var(--secondary-clr));
 }
 
-@mixin graident-primary-y {
+@mixin gradient-primary-y {
     background-image: linear-gradient(to top, var(--primary-clr), var(--secondary-clr));
 }
 

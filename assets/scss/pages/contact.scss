@@ -1,0 +1,75 @@
+@import "../main/mixins";
+
+#contact-info-section {
+    padding: 120px 0 60px;
+}
+
+.contact-info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.single-info {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eaebea;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fdfdfd;
+    font-size: 18px;
+    gap: 5px;
+
+    &__icon {
+        width: 45px;
+        height: 45px;
+        line-height: 47px;
+        font-size: 16px;
+        border-radius: 50%;
+        text-align: center;
+        @include gradient-primary-x;
+        color: #dfdfdf;
+        outline: 1px solid #dfdfdf;
+        outline-offset: -5px;
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: var(--black);
+    }
+}
+
+.contact-form-section {
+    @include gradient-primary-x;
+    padding: 50px;
+    border-radius: 15px;
+    margin-bottom: 120px;
+
+    h2 {
+        color: var(--white);
+        margin-bottom: 30px;
+    }
+}
+
+.contact-form {
+    > .row {
+        row-gap: 25px;
+    }
+    input,
+    textarea {
+        width: 100%;
+        padding: 15px 30px;
+        border-radius: 10px;
+        border: none;
+        background: #dfdfdf;
+
+        &:focus {
+            outline: 2px solid #474747;
+        }
+    }
+
+    .btn-custom-1 {
+        border: 2px solid #dfdfdf;
+        line-height: 53px;
+    }
+}

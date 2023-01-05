@@ -10,94 +10,744 @@
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
 
+    <!-- TINY SLIDER CSS -->
+    <link rel="stylesheet" href="assets/vendor/tiny-slider/tiny-slider.css">
+
     <!-- FONT AWESOME CSS -->
     <link rel="stylesheet" href="assets/vendor/font_awesome/css/fontawesome.css">
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- INDEX 2 CSS -->
+    <link rel="stylesheet" href="assets/css/style-2.css">
 </head>
 
 <body>
+    <!-- --------------- HEADER SECTION STARTS --------------- -->
     <header>
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- LOGO AND COLLAPSE BUTTON  -->
-                <div class="col-lg-2">
-                    <div class="row align-items-center">
-                        <div class="col-lg-12 col-9">
-                            <div class="logo-container">
-                                <img src="assets/img/logo.png" alt="logo" class="logo">
-                            </div>
-                        </div>
-
-                        <div class="col-3 d-lg-none text-end">
-                            <button class="btn btn-hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav-menu" aria-controls="nav-menu">
-                                <i class="fa-thin fa-bars-sort"></i>
-                            </button>
-                        </div>
+        <div class="header-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <span class="header-top__txt">Welcome to gachpala</span>
                     </div>
-                </div>
 
-                <!-- NAVBAR MENU -->
-                <div class="col-lg-10 order-lg-2 order-3">
-                    <div class="navbar p-0 navbar-expand-lg">
-                        <div class="offcanvas offcanvas-start" tabindex="-1" id="nav-menu" aria-labelledby="nav-menuLabel">
-                            <div class="offcanvas-header">
-                                <img class="offcanvas-title logo" id="nav-menuLabel" src="assets/img/logo.png" alt="logo">
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <div class="col-lg-9 text-end">
+                        <div class="header-top__right-content d-flex justify-content-end align-items-center">
+                            <div class="server-time d-flex align-items-center">
+                                <span class="server-time__title">Sever Time :</span>
+                                <div class="server-time__date-and-time d-flex">
+                                    <div class="server-time__time">
+                                        <i class="fa-thin fa-clock"></i>3:44:28
+                                    </div>
+                                    <div class="server-time__date">
+                                        <i class="fa-thin fa-calendar"></i> 27th Jan 2022
+                                    </div>
+                                </div>
                             </div>
-                            <div class="offcanvas-body">
-                                <ul class="navbar-nav mx-auto align-items-center position-relative">
-                                    <li class="nav-item dropdown-btn">
-                                        <a href="#" class="">Home <i class="fa-regular fa-angle-down"></i></a>
-                                        <ul class="submenu">
-                                            <li class="nav-item"><a href="index.html">homepage 1</a></li>
-                                            <li class="nav-item"><a href="index-2.html">homepage 2</a></li>
-                                            <li class="nav-item"><a href="index-3.html">homepage 3</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="about.html">About us</a>
-                                    </li>
-
-                                    <li class="nav-item dropdown-btn">
-                                        <a href="#">article <i class="fa-regular fa-angle-down"></i></a>
-                                        <ul class="submenu">
-                                            <li class="nav-item"><a href="blog.html">left sidebar</a></li>
-                                            <li class="nav-item"><a href="blog-2.html">right sidebar</a></li>
-                                            <li class="nav-item"><a href="blog-details.html">article details</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item dropdown-btn">
-                                        <a href="#">pages <i class="fa-regular fa-angle-down"></i></a>
-                                        <ul class="submenu">
-                                            <li class="nav-item"><a href="plant-gallery.html">plant gallery</a></li>
-                                            <li class="nav-item"><a href="gallery-details.html">gallery details</a></li>
-                                            <li class="nav-item"><a href="error.html">Error 404</a></li>
-                                            <li class="nav-item"><a href="log-in.html">Sign in</a></li>
-                                            <li class="nav-item"><a href="registar.html">sign up</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="contact.html">contact</a>
-                                    </li>
-                                </ul>
-
-
-                                <a href="#" class="btn-custom-1">Join Us <i class="fa-thin fa-comment"></i></a>
+                            <div class="header-top__actions">
+                                <a href="log-in.html">login</a>
+                                <span>or</span>
+                                <a href="registar.html" class="header-top__btns">register</a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- LOGO AND COLLAPSE BUTTON  -->
+                    <div class="col-lg-2">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12 col-9">
+                                <div class="logo-container">
+                                    <img src="assets/img/logo.png" alt="logo" class="logo">
+                                </div>
+                            </div>
+
+                            <div class="col-3 d-lg-none text-end">
+                                <button class="btn btn-hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav-menu" aria-controls="nav-menu">
+                                    <i class="fa-thin fa-bars-sort"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- NAVBAR MENU -->
+                    <div class="col-lg-10 order-lg-2 order-3">
+                        <div class="navbar p-0 navbar-expand-lg">
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="nav-menu" aria-labelledby="nav-menuLabel">
+                                <div class="offcanvas-header">
+                                    <img class="offcanvas-title logo" id="nav-menuLabel" src="assets/img/logo.png" alt="logo">
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body align-items-center">
+                                    <ul class="navbar-nav mx-auto align-items-center position-relative">
+                                        <li class="nav-item dropdown-btn">
+                                            <a href="#" class="">Home <i class="fa-regular fa-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li class="nav-item"><a href="index.html">homepage 1</a></li>
+                                                <li class="nav-item"><a href="index-2.html">homepage 2</a></li>
+                                                <li class="nav-item"><a href="index-3.html">homepage 3</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="about.html">About us</a>
+                                        </li>
+
+                                        <li class="nav-item dropdown-btn">
+                                            <a href="#">blog <i class="fa-regular fa-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li class="nav-item"><a href="blog.html">right sidebar blog</a></li>
+                                                <li class="nav-item"><a href="blog-2.html">left sidebar blog</a></li>
+                                                <li class="nav-item"><a href="blog-details.html">single blog details</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-item dropdown-btn">
+                                            <a href="#">pages <i class="fa-regular fa-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li class="nav-item"><a href="plant-gallery.html">plant gallery</a></li>
+                                                <li class="nav-item"><a href="gallery-details.html">gallery details</a></li>
+                                                <li class="nav-item"><a href="error.html">Error 404</a></li>
+                                                <li class="nav-item"><a href="log-in.html">Sign in</a></li>
+                                                <li class="nav-item"><a href="registar.html">sign up</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="contact.html">contact</a>
+                                        </li>
+                                    </ul>
+
+
+                                    <a href="#" class="btn-custom-1">Join Us <i class="fa-thin fa-comment"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </header>
+    <!-- --------------- HEADER SECTION ENDS --------------- -->
+
+    <main>
+        <!-- --------------- HERO SECTION STARTS --------------- -->
+        <section id="hero-section" class="bg-defaults">
+            <div class="container position-relative">
+                <div class="row justify-content-center gy-5 gy-lg-0">
+                    <div class="col-lg-9">
+                        <div class="hero-content d-flex flex-column">
+                            <div class="hero-content-top">
+                                <h1 class="hero-content__title">A Plant Supplies More Nutrients To Its Leaves</h1>
+                                <p class="hero-content__txt">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, magni.
+                                    Molestias provident rem at, et qui ut fuga exercitationem ipsum.
+                                </p>
+
+                                <div class="hero-btns d-flex align-items-center justify-content-center">
+                                    <a href="#" class="btn-custom-1">Explore <i class="fa-thin fa-arrow-right-long"></i></a>
+                                    <a href="#" class="btn-custom-2">get started <i class="fa-thin fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="hero-content-bottom d-flex justify-content-center">
+                                <div class="single-stat">
+                                    <div class="single-stat__img-container">
+                                        <img class="single-stat__img" src="assets/img/icon/flowers.png">
+                                    </div>
+                                    <div class="single-stat__details">
+                                        <span class="single-stat__number">51+</span>
+                                        <span class="single-stat__name">PLANTS</span>
+                                    </div>
+                                </div>
+                                <div class="single-stat">
+                                    <div class="single-stat__img-container">
+                                        <img class="single-stat__img" src="assets/img/icon/gardening.png">
+                                    </div>
+                                    <div class="single-stat__details">
+                                        <span class="single-stat__number">231</span>
+                                        <span class="single-stat__name">Nursary</span>
+                                    </div>
+                                </div>
+                                <div class="single-stat">
+                                    <div class="single-stat__img-container">
+                                        <img class="single-stat__img" src="assets/img/icon/sprout.png">
+                                    </div>
+                                    <div class="single-stat__details">
+                                        <span class="single-stat__number">325</span>
+                                        <span class="single-stat__name">gardening</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------- HERO SECTION ENDS --------------- -->
 
 
+        <!-- --------------- CTA SECTION STARTS --------------- -->
+        <section id="cta-section" class="bg-defaults">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h3 class="cta-title">If you have any query about us.</h3>
+                    </div>
+
+                    <div class="col-lg-4 text-end">
+                        <a href="contact.html" class="btn-custom-1">contact us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------- CTA SECTION ENDS --------------- -->
+
+
+        <!-- --------------- ABOUT SECTION STARTS --------------- -->
+        <section id="about-section" class="section-spacing">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-subtitle">ABOUT US</span>
+                    <h2 class="section-title">We've a high priority for our valuable <br> customers, suppliers and partners</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="about-section__left-content">
+                            <h3>We do not just grow plants…we love doing it!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, rerum in eos iusto quae expedita a quaerat exercitationem, dicta cumque pariatur fugit voluptatum? <span class="highlighted-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis necessitatibus, maiores ut quia minus est?</span> Temporibus quaerat recusandae iusto officia velit nam vero? Modi similique quas voluptate et libero est vitae ipsum eius. Dolores, sed? Impedit debitis laborum quis deleniti explicabo. Neque?</p>
+
+                            <a href="#" class="btn-custom-2">know more <i class="fa-thin fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="about-section__badge-container">
+                            <img src="assets/img/badges/badge-1.png" alt="">
+                            <img src="assets/img/badges/badge-2.png" alt="">
+                            <img src="assets/img/badges/badge-3.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="about-section__video">
+                            <img src="assets/img/about/about-img.jpg" alt="">
+                            <a class="about-section__video-popup-btn" href="#"><i class="fa-solid fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------- ABOUT SECTION ENDS --------------- -->
+
+
+        <!-- --------------- QUOTE SECTION STARTS --------------- -->
+        <section id="quote-section">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-3 position-relative">
+                        <div class="quote-section__img">
+                            <img src="assets/img/quote/quote-img.jpg" alt="">
+                        </div>
+                        <div class="quote-section__vid">
+                            <img src="assets/img/quote/quote-vid.jpg" alt="">
+                            <button class="quote-section__btn"><i class="fa-thin fa-play-circle"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="quote-section__txt">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iste sequi fugiat, consectetur eos animi rerum. Omnis laboriosam ipsam</p>
+                            <h5>Michel Jasin <small>CEO of Nursio</small></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------- QUOTE SECTION ENDS --------------- -->
+
+
+        <!-- --------------- GALLERY SECTION STARTS --------------- -->
+        <section id="gallery-section" class="section-spacing">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-subtitle">PLANT GALLERY</span>
+                    <h2 class="section-title">Whether you're looking for landscaping or <br> funning plants to spruce up your home</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-houseplant-tab" data-bs-toggle="pill" data-bs-target="#pills-houseplant" type="button" role="tab" aria-controls="pills-houseplant" aria-selected="true">
+                                    <span class="nav-link__img-container">
+                                        <img src="assets/img/gallery/urban-garden.png" alt="">
+                                    </span>
+                                    houseplant
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-aloe-vera-tab" data-bs-toggle="pill" data-bs-target="#pills-aloe-vera" type="button" role="tab" aria-controls="pills-aloe-vera" aria-selected="false">
+                                    <span class="nav-link__img-container">
+                                        <img src="assets/img/gallery/aloe-vera.png" alt="">
+                                    </span>
+                                    aloe vera
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-gardening-tab" data-bs-toggle="pill" data-bs-target="#pills-gardening" type="button" role="tab" aria-controls="pills-gardening" aria-selected="false">
+                                    <span class="nav-link__img-container">
+                                        <img src="assets/img/gallery/gardening.png" alt="">
+                                    </span>
+                                    gardening
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-nursery-tab" data-bs-toggle="pill" data-bs-target="#pills-nursery" type="button" role="tab" aria-controls="pills-nursery" aria-selected="false">
+                                    <span class="nav-link__img-container">
+                                        <img src="assets/img/gallery/watering-plants.png" alt="">
+                                    </span>
+                                    nursery
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+
+                            <div class="tab-pane fade show active" id="pills-houseplant" role="tabpanel" aria-labelledby="pills-houseplant-tab" tabindex="0">
+                                <div class="houseplant-slider">
+                                    <div>
+                                        <div class="single-gallery-item">
+                                            <img src="assets/img/gallery/img1.jpg" alt="" class="single-gallery-item__img">
+                                            <div class="single-gallery-item__txt">
+                                                <h5 class="single-gallery-item__title">Aphelandra squarrosa</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque dignissimos error voluptas explicabo?</p>
+                                                <a href="gallery-details.html" class="btn-custom-1"><i class="fa-regular fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="single-gallery-item">
+                                            <img src="assets/img/gallery/img2.jpg" alt="" class="single-gallery-item__img">
+                                            <div class="single-gallery-item__txt">
+                                                <h5 class="single-gallery-item__title">The Green Houseplant</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque dignissimos error voluptas explicabo?</p>
+                                                <a href="gallery-details.html" class="btn-custom-1"><i class="fa-regular fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="single-gallery-item">
+                                            <img src="assets/img/gallery/img3.jpg" alt="" class="single-gallery-item__img">
+                                            <div class="single-gallery-item__txt">
+                                                <h5 class="single-gallery-item__title">The Forced bulbs</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque dignissimos error voluptas explicabo?</p>
+                                                <a href="gallery-details.html" class="btn-custom-1"><i class="fa-regular fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="single-gallery-item">
+                                            <img src="assets/img/gallery/img2.jpg" alt="" class="single-gallery-item__img">
+                                            <div class="single-gallery-item__txt">
+                                                <h5 class="single-gallery-item__title">Aphelandra squarrosa</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque dignissimos error voluptas explicabo?</p>
+                                                <a href="gallery-details.html" class="btn-custom-1"><i class="fa-regular fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-aloe-vera" role="tabpanel" aria-labelledby="pills-aloe-vera-tab" tabindex="0">
+                                <div class="aloe-vera-slider">
+                                    <div>
+                                        <div class="single-gallery-item">
+                                            <img src="assets/img/gallery/img4.jpg" alt="" class="single-gallery-item__img">
+                                            <div class="single-gallery-item__txt">
+                                                <h5 class="single-gallery-item__title">Aphelandra squarrosa</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque dignissimos error voluptas explicabo?</p>
+                                                <a href="gallery-details.html" class="btn-custom-1"><i class="fa-regular fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="single-gallery-item">
+                                            <img src="assets/img/gallery/img5.jpg" alt="" class="single-gallery-item__img">
+                                            <div class="single-gallery-item__txt">
+                                                <h5 class="single-gallery-item__title">The Green Houseplant</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque dignissimos error voluptas explicabo?</p>
+                                                <a href="gallery-details.html" class="btn-custom-1"><i class="fa-regular fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="single-gallery-item">
+                                            <img src="assets/img/gallery/img6.jpg" alt="" class="single-gallery-item__img">
+                                            <div class="single-gallery-item__txt">
+                                                <h5 class="single-gallery-item__title">The Forced bulbs</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque dignissimos error voluptas explicabo?</p>
+                                                <a href="gallery-details.html" class="btn-custom-1"><i class="fa-regular fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="single-gallery-item">
+                                            <img src="assets/img/gallery/img5.jpg" alt="" class="single-gallery-item__img">
+                                            <div class="single-gallery-item__txt">
+                                                <h5 class="single-gallery-item__title">Aphelandra squarrosa</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque dignissimos error voluptas explicabo?</p>
+                                                <a href="gallery-details.html" class="btn-custom-1"><i class="fa-regular fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-gardening" role="tabpanel" aria-labelledby="pills-gardening-tab" tabindex="0">
+                                <div class="gardening-slider">
+                                    <div>
+                                        <div class="single-gallery-item">
+                                            <img src="assets/img/gallery/img7.jpg" alt="" class="single-gallery-item__img">
+                                            <div class="single-gallery-item__txt">
+                                                <h5 class="single-gallery-item__title">Aphelandra squarrosa</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque dignissimos error voluptas explicabo?</p>
+                                                <a href="gallery-details.html" class="btn-custom-1"><i class="fa-regular fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="single-gallery-item">
+                                            <img src="assets/img/gallery/img8.jpg" alt="" class="single-gallery-item__img">
+                                            <div class="single-gallery-item__txt">
+                                                <h5 class="single-gallery-item__title">The Green Houseplant</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque dignissimos error voluptas explicabo?</p>
+                                                <a href="gallery-details.html" class="btn-custom-1"><i class="fa-regular fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="single-gallery-item">
+                                            <img src="assets/img/gallery/img9.jpg" alt="" class="single-gallery-item__img">
+                                            <div class="single-gallery-item__txt">
+                                                <h5 class="single-gallery-item__title">The Forced bulbs</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque dignissimos error voluptas explicabo?</p>
+                                                <a href="gallery-details.html" class="btn-custom-1"><i class="fa-regular fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="single-gallery-item">
+                                            <img src="assets/img/gallery/img7.jpg" alt="" class="single-gallery-item__img">
+                                            <div class="single-gallery-item__txt">
+                                                <h5 class="single-gallery-item__title">Aphelandra squarrosa</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque dignissimos error voluptas explicabo?</p>
+                                                <a href="gallery-details.html" class="btn-custom-1"><i class="fa-regular fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-nursery" role="tabpanel" aria-labelledby="pills-nursery-tab" tabindex="0">
+                                <div class="nursery-slider">
+                                    <div>
+                                        <div class="single-gallery-item">
+                                            <img src="assets/img/gallery/img1.jpg" alt="" class="single-gallery-item__img">
+                                            <div class="single-gallery-item__txt">
+                                                <h5 class="single-gallery-item__title">Aphelandra squarrosa</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque dignissimos error voluptas explicabo?</p>
+                                                <a href="gallery-details.html" class="btn-custom-1"><i class="fa-regular fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="single-gallery-item">
+                                            <img src="assets/img/gallery/img4.jpg" alt="" class="single-gallery-item__img">
+                                            <div class="single-gallery-item__txt">
+                                                <h5 class="single-gallery-item__title">The Green Houseplant</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque dignissimos error voluptas explicabo?</p>
+                                                <a href="gallery-details.html" class="btn-custom-1"><i class="fa-regular fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="single-gallery-item">
+                                            <img src="assets/img/gallery/img7.jpg" alt="" class="single-gallery-item__img">
+                                            <div class="single-gallery-item__txt">
+                                                <h5 class="single-gallery-item__title">The Forced bulbs</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque dignissimos error voluptas explicabo?</p>
+                                                <a href="gallery-details.html" class="btn-custom-1"><i class="fa-regular fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="single-gallery-item">
+                                            <img src="assets/img/gallery/img1.jpg" alt="" class="single-gallery-item__img">
+                                            <div class="single-gallery-item__txt">
+                                                <h5 class="single-gallery-item__title">Aphelandra squarrosa</h5>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque dignissimos error voluptas explicabo?</p>
+                                                <a href="gallery-details.html" class="btn-custom-1"><i class="fa-regular fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------- GALLERY SECTION ENDS --------------- -->
+
+
+        <!-- --------------- ACHIEVEMENT SECTION STARTS --------------- -->
+        <section id="achievement-section">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6">
+                        <div class="achievements">
+                            <div class="single-achievement">
+                                <img src="assets/img/achievement/plant-pot.png" alt="" class="single-achievement__img">
+                                <h4 class="single-achievement__amount">2501</h4>
+                                <h5 class="single-achievement__name">TOTAL PROJECTS</h5>
+                            </div>
+                            <div class="single-achievement">
+                                <img src="assets/img/achievement/planet-earth.png" alt="" class="single-achievement__img">
+                                <h4 class="single-achievement__amount">4700</h4>
+                                <h5 class="single-achievement__name">HAPPIY CUSTOMERS</h5>
+                            </div>
+                            <div class="single-achievement">
+                                <img src="assets/img/achievement/save-nature.png" alt="" class="single-achievement__img">
+                                <h4 class="single-achievement__amount">3201</h4>
+                                <h5 class="single-achievement__name">HOME DELIVERY</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="section-heading">
+                            <span class="section-subtitle">OUR ACHIVEMENTS</span>
+                            <h2 class="section-title">Achivements we've done!</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------- ACHIEVEMENT SECTION ENDS --------------- -->
+
+
+        <!-- --------------- FEATURES SECTION STARTS --------------- -->
+        <section id="features-section" class="section-spacing">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-subtitle">OUR FEUTURES</span>
+                    <h2 class="section-title">Inspiring with modern nursery ideas <br> from our top designers.</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 d-flex justify-content-end align-items-start">
+                        <img src="assets/img/feature/feature-img.jpg" alt="" class="features-section__img">
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="features">
+                            <div class="single-feature">
+                                <img src="assets/img/feature/1.png" alt="" class="single-feature__img">
+                                <div class="single-feature__txt">
+                                    <h4>Greenery Touch</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit ctetur adipi.</p>
+                                </div>
+                            </div>
+                            <div class="single-feature">
+                                <img src="assets/img/feature/2.png" alt="" class="single-feature__img">
+                                <div class="single-feature__txt">
+                                    <h4>All Grown Up</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit ctetur adipi.</p>
+                                </div>
+                            </div>
+                            <div class="single-feature">
+                                <img src="assets/img/feature/3.png" alt="" class="single-feature__img">
+                                <div class="single-feature__txt">
+                                    <h4>Clean and Modern</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit ctetur adipi.</p>
+                                </div>
+                            </div>
+                            <div class="single-feature">
+                                <img src="assets/img/feature/4.png" alt="" class="single-feature__img">
+                                <div class="single-feature__txt">
+                                    <h4>Pops of Color</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit ctetur adipi.</p>
+                                </div>
+                            </div>
+                            <div class="single-feature">
+                                <img src="assets/img/feature/5.png" alt="" class="single-feature__img">
+                                <div class="single-feature__txt">
+                                    <h4>Soft in White</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit ctetur adipi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------- FEATURES SECTION ENDS --------------- -->
+
+
+        <!-- --------------- TESTIMONIAL SECTION STARTS --------------- -->
+        <section id="testimonial-section" class="section-spacing">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-5">
+                        <div class="section-heading">
+                            <span class="section-subtitle">USER'S FEEDBACK</span>
+                            <h2 class="section-title">Customers said on how we're working.</h2>
+                            <a href="#" class="btn-custom-1">Konw us more <i class="fa-thin fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="feedback-slider-container">
+                            <div class="feedbacks-slider">
+                                <div class="pt-5">
+                                    <div class="single-feedback">
+                                        <img src="assets/img/person-headshot/1.jpg" alt="" class="single-feedback__user">
+                                        <p class="single-feedback__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vitae corporis id! Et, ipsam. Quasi suscipit sit quae! Maiores, voluptatem!</p>
+                                        <h5 class="single-feedback__name">Lorean valer</h5>
+                                        <span class="label">content writer</span>
+                                    </div>
+                                </div>
+
+                                <div class="pt-5">
+                                    <div class="single-feedback">
+                                        <img src="assets/img/person-headshot/2.jpg" alt="" class="single-feedback__user">
+                                        <p class="single-feedback__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vitae corporis id! Et, ipsam. Quasi suscipit sit quae! Maiores, voluptatem!</p>
+                                        <h5 class="single-feedback__name">John buttler</h5>
+                                        <span class="label">plant worker</span>
+                                    </div>
+                                </div>
+
+                                <div class="pt-5">
+                                    <div class="single-feedback">
+                                        <img src="assets/img/person-headshot/3.jpg" alt="" class="single-feedback__user">
+                                        <p class="single-feedback__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vitae corporis id! Et, ipsam. Quasi suscipit sit quae! Maiores, voluptatem!</p>
+                                        <h5 class="single-feedback__name">Sara max</h5>
+                                        <span class="label">nursery specialist</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feedback-slider__navs">
+                                <button><i class="fa-solid fa-circle"></i></button>
+                                <button><i class="fa-solid fa-circle"></i></button>
+                                <button><i class="fa-solid fa-circle"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------- TESTIMONIAL SECTION ENDS --------------- -->
+
+
+        <!-- --------------- BLOG SECTION STARTS --------------- -->
+        <section id="blog-section" class="section-spacing">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-subtitle">LATEST BLOG</span>
+                    <h2 class="section-title">Our blogs are all about plants, you won't <br> know more without reading blogs.</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="single-blog">
+                            <img src="assets/img/blog/blog-1.jpg" alt="" class="single-blog__img">
+                            <div class="single-blog__content">
+                                <h4 class="single-blog__title">Lorem ipsum dolor sit amet.</h4>
+                                <div class="single-blog__info">
+                                    <span class="single-blog__author"><i class="fa-light fa-user"></i> dale steyn</span>
+                                    <span class="single-blog__date"><i class="fa-light fa-clock"></i> 20 march 2022</span>
+                                </div>
+                                <p class="single-blog__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, voluptatem non impedit dolorem maiores consectetur iure perspiciatis natus enim temporibus.</p>
+                                <a href="#" class="btn-custom-1">read more <i class="fa-thin fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-blog">
+                            <img src="assets/img/blog/blog-2.jpg" alt="" class="single-blog__img">
+                            <div class="single-blog__content">
+                                <h4 class="single-blog__title">Lorem ipsum dolor sit amet.</h4>
+                                <div class="single-blog__info">
+                                    <span class="single-blog__author"><i class="fa-light fa-user"></i> dale steyn</span>
+                                    <span class="single-blog__date"><i class="fa-light fa-clock"></i> 20 march 2022</span>
+                                </div>
+                                <p class="single-blog__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, voluptatem non impedit dolorem maiores consectetur iure perspiciatis natus enim temporibus.</p>
+                                <a href="#" class="btn-custom-1">read more <i class="fa-thin fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-blog">
+                            <img src="assets/img/blog/blog-3.jpg" alt="" class="single-blog__img">
+                            <div class="single-blog__content">
+                                <h4 class="single-blog__title">Lorem ipsum dolor sit amet.</h4>
+                                <div class="single-blog__info">
+                                    <span class="single-blog__author"><i class="fa-light fa-user"></i> dale steyn</span>
+                                    <span class="single-blog__date"><i class="fa-light fa-clock"></i> 20 march 2022</span>
+                                </div>
+                                <p class="single-blog__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, voluptatem non impedit dolorem maiores consectetur iure perspiciatis natus enim temporibus.</p>
+                                <a href="#" class="btn-custom-1">read more <i class="fa-thin fa-arrow-right-long"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------- BLOG SECTION ENDS --------------- -->
+
+
+        <!-- --------------- CTA SECTION STARTS --------------- -->
+        <section id="cta-section" class="bg-defaults">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <h3 class="cta-title">Subscribe! To get the latest news.</h3>
+                    </div>
+
+                    <div class="col-lg-5 text-end">
+                        <form action="#" id="subs-form">
+                            <input type="email" name="subs-mail" id="subs-mail" placeholder="Enter Your Email Address">
+                            <button type="submit" class="btn-custom-1">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------- CTA SECTION ENDS --------------- -->
+    </main>
+
+    <!-- --------------- FOOTER SECTION STARTS --------------- -->
     <footer>
         <!-- FOOTER TOP STARTS -->
         <div class="footer-top">
@@ -191,10 +841,14 @@
         </div>
         <!-- FOOTER BOTTOM ENDS -->
     </footer>
+    <!-- --------------- FOOTER SECTION ENDS --------------- -->
 
 
     <!-- BOOTSTRAP JS -->
     <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+    <!-- TINY SLIDER JS -->
+    <script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
 
     <!-- CUSTOM JS -->
     <script src="assets/js/main.js"></script>

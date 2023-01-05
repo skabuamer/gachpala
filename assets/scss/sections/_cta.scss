@@ -23,3 +23,34 @@
     margin-bottom: 0;
     color: var(--white);
 }
+
+#subs-form {
+    position: relative;
+
+    .btn-custom-1 {
+        padding: 0 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 45px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+}
+
+#subs-mail {
+    width: 100%;
+    background: #dfdfdf;
+    padding: 0px 20px;
+    padding-right: 130px;
+    border-radius: 10px;
+    // transition: all 0.4s ease;
+    color: #545454;
+    margin-bottom: 0;
+    height: 45px;
+    border: none;
+
+    &:focus {
+        outline: 2px solid var(--secondary-clr);
+    }
+}

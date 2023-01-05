@@ -1,0 +1,98 @@
+@import "../main/mixins";
+header {
+    padding: 0;
+}
+
+.header-top {
+    background-image: linear-gradient(to right, var(--primary-clr), var(--secondary-clr));
+    padding: 15px 0;
+    color: var(--white);
+
+    &__txt {
+        text-transform: capitalize;
+    }
+
+    &__right-content {
+        gap: 25px;
+    }
+}
+
+.server-time {
+    &__title {
+        margin-right: 10px;
+    }
+
+    &__date-and-time {
+        border: 1px solid #fff;
+        padding: 0 15px;
+        border-radius: 20px;
+        gap: 15px;
+        line-height: 30px;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    &__time,
+    &__date {
+        i {
+            margin-right: 10px;
+        }
+    }
+}
+
+.header-top__actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    a {
+        color: #fff;
+        text-transform: capitalize;
+
+        &.header-top__btns {
+            background: #fff;
+            padding: 0 20px;
+            border-radius: 30px;
+            color: var(--secondary-clr);
+            font-weight: 500;
+            text-transform: capitalize;
+            height: 35px;
+            display: inline-block;
+            line-height: 36px;
+        }
+    }
+}
+
+#hero-section {
+    background-image: none;
+    padding: 170px 0 120px;
+
+    > .container {
+        content: none;
+    }
+
+    &::before {
+        @include before;
+        background: url(../img/bg/top-bg.png) 0 0 repeat-x;
+        background-size: 450px;
+        opacity: 0.8;
+    }
+}
+
+.hero-content {
+    text-align: center;
+}
+.single-stat {
+    &__img-container {
+        border: 2px dashed var(--primary-clr);
+        border-radius: 50%;
+        padding: 15px;
+    }
+
+    &__img {
+        background: none;
+        border-radius: 0;
+        width: 53px;
+        height: 53px;
+    }
+}

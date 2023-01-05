@@ -1,0 +1,150 @@
+#testimonial-section {
+    background: url(../img/bg/deg-bg.jpg) center center repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        @include before;
+        @include gradient-primary-y;
+        opacity: 92%;
+        z-index: -1;
+    }
+
+    .section-heading {
+        margin-bottom: 0;
+        text-align: left;
+        margin-right: 120px;
+
+        &::before,
+        &::after {
+            content: none;
+        }
+
+        span.section-subtitle {
+            color: #dfdfdf;
+        }
+
+        h2.section-title {
+            color: #dfdfdf;
+            margin-bottom: 30px;
+            font-size: 37px;
+        }
+
+        .btn-custom-1 {
+            border: 1px solid #dfdfdf;
+            line-height: 55px;
+        }
+    }
+}
+
+.feedback-slider-container {
+    position: relative;
+}
+
+.single-feedback {
+    background: linear-gradient(327deg, #2c5c3b, #4c9253);
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    color: #e3ede6;
+    padding: 45px 30px;
+    padding-top: 100px;
+
+    &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 95%;
+        height: 92%;
+        border: 1px solid #ffffff4a;
+        content: "";
+        translate: -50% -50%;
+        border-radius: 10px;
+    }
+
+    &__user {
+        position: absolute;
+        width: 145px;
+        height: 145px;
+        top: -70px;
+        left: 50%;
+        translate: -50%;
+        border-radius: 50%;
+        outline: 1px solid #fff;
+        outline-offset: -10px;
+    }
+
+    &__txt {
+        font-size: 20px;
+        line-height: 35px;
+        font-weight: 400;
+        position: relative;
+        margin-bottom: 20px;
+        padding-bottom: 70px;
+
+        &::before {
+            @include before;
+            background: linear-gradient(to right, white 35%, #00800000 25%, #00800000 65%, white 50%);
+            height: 1px;
+            bottom: 20px;
+            top: auto;
+            width: 200px;
+            left: 50%;
+            translate: -50%;
+            z-index: 0;
+        }
+
+        &::after {
+            @include before;
+            background: url(../img/icon/leaf-icon.png) no-repeat center center;
+            background-size: 40px;
+            bottom: 0;
+            top: auto;
+            width: 60px;
+            height: 48px;
+            left: 50%;
+            translate: -50%;
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    &__name {
+        text-transform: capitalize;
+    }
+}
+
+.feedback-slider__navs {
+    position: absolute;
+    right: -15px;
+    background: #539d5a;
+    padding: 15px 8px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    top: 58%;
+    translate: 0 -50%;
+    border-radius: 10px;
+
+    button {
+        color: #fff;
+        font-size: 0px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        width: 15px;
+        height: 15px;
+        line-height: 11px;
+        padding: 0;
+        padding-left: 1px;
+        @include gradient-primary-y;
+        transition: var(--transition);
+
+        &.tns-nav-active {
+            font-size: 10px;
+        }
+    }
+}
+
+.label {
+    text-transform: capitalize;
+}

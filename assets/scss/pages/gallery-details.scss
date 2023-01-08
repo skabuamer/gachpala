@@ -17,10 +17,11 @@
     &__title {
         margin-bottom: 15px;
         color: #5b6560;
+        font-weight: 600;
     }
 
     &__txt {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 32px;
         text-align: justify;
     }
@@ -83,6 +84,8 @@
                     padding-left: 20px;
                     display: inline-block;
                     text-transform: capitalize;
+                    font-family: var(--font-secondary);
+                    font-weight: 400;
 
                     &:hover {
                         color: var(--primary-clr);

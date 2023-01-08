@@ -5,7 +5,9 @@
     --black: #000;
 
     /* --- Fonts --- */
-    --font-primary: "Roboto", sans-serif;
+    --font-primary: "Titillium Web", sans-serif;
+    --font-secondary: "Roboto", sans-serif;
+    --font-3: "Raleway", sans-serif;
     --fs-xl: 70px;
     --fs-h2: 35px;
     --fs-h3: 30px;
@@ -13,7 +15,7 @@
     --fs-h5: 25px;
     --fs-h6: 20px;
 
-    /* --- --- */
+    /* --- utilities --- */
     --transition: 0.4s ease;
 }
 
@@ -25,7 +27,8 @@
 
 @include lg {
     :root {
-        --fs-xl: 55px;
+        --fs-xl: 50px;
+        --fs-h4: 22px;
     }
 }
 
@@ -38,17 +41,22 @@
 @include sm {
     :root {
         --fs-xl: 40px;
+        --fs-h2: 30px;
+        --fs-h3: 25px;
     }
 }
 
 @include xs {
     :root {
         --fs-xl: 38px;
+        --fs-h2: 25px;
     }
 }
 
 @include xxs {
     :root {
         --fs-xl: 30px;
+        --fs-h2: 20px;
+        --fs-h3: 20px;
     }
 }

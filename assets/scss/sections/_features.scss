@@ -30,4 +30,10 @@
         outline: 1px solid var(--white);
         outline-offset: -5px;
     }
+
+    &__txt {
+        h4 {
+            font-family: var(--font-3);
+        }
+    }
 }

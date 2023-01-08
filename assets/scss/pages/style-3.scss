@@ -1,9 +1,5 @@
 @import "../main/breakpoints";
-// @import "../main/variables";
 @import "../main/mixins";
-// @import "../main/typography";
-// @import "../main/defaults";
-// @import "../main/components";
 
 header {
     background: linear-gradient(90deg, #519b5b, #3e7c4d);
@@ -74,7 +70,7 @@ header {
 .hero-btns {
     .btn-custom-1 {
         border: 2px solid var(--white);
-        line-height: 53px;
+        line-height: 45px;
 
         &::before {
         }
@@ -91,7 +87,7 @@ header {
 
     .btn-custom-2 {
         border: 2px solid #fff;
-        line-height: 53px;
+        line-height: 45px;
 
         &::before {
             border-radius: 8px;

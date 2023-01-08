@@ -17,6 +17,8 @@
   background: #fdfdfd;
   font-size: 18px;
   gap: 5px;
+  font-weight: 400;
+  font-family: var(--font-secondary);
 }
 .single-info__icon {
   width: 45px;
@@ -52,7 +54,7 @@
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 15px 30px;
+  padding: 15px 20px;
   border-radius: 10px;
   border: none;
   background: #dfdfdf;
@@ -63,5 +65,5 @@
 }
 .contact-form .btn-custom-1 {
   border: 2px solid #dfdfdf;
-  line-height: 53px;
+  line-height: 45px;
 }/*# sourceMappingURL=contact.css.map */

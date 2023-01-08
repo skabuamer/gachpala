@@ -2,29 +2,71 @@
 #quote-section {
     @include gradient-primary-y;
     padding: 80px 0;
+
+    > .container > .row {
+        row-gap: 50px;
+    }
 }
 
 .quote-section {
-    &__img {
-        border-radius: 50%;
-        overflow: hidden;
+    &__vid-btn {
+        width: fit-content;
+        margin: 0 auto;
+        position: relative;
 
-        img {
-            outline: 1px solid #e1e1e1;
-            outline-offset: -10px;
-            border-radius: 50%;
+        @include md {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__img {
+        outline: 1px solid #e1e1e1;
+        outline-offset: -10px;
+        border-radius: 50%;
+
+        @include md {
+            width: 300px;
+        }
+
+        @include xxs {
+            width: 200px;
         }
     }
 
     &__vid {
-        width: 200px;
-        height: 200px;
+        width: 80%;
+        height: 80%;
         overflow: hidden;
         position: absolute;
         top: 50%;
         right: -100px;
         border-radius: 50%;
         translate: 0% -50%;
+
+        @include md {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin-left: -120px;
+            top: auto;
+            right: auto;
+            translate: 0;
+        }
+
+        @include xxs {
+            width: 160px;
+            height: 160px;
+            margin-left: -70px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 
     &__btn {
@@ -36,7 +78,7 @@
         background: #3f7e4e;
         color: #fff;
         font-size: 50px;
-        padding: 50px;
+        // padding: 50px;
         border-radius: 50%;
         width: 90%;
         height: 90%;
@@ -47,33 +89,41 @@
         color: #f3fff3;
         position: relative;
 
+        @include sm {
+            text-align: center;
+            padding-bottom: 35px;
+            margin-bottom: 85px;
+        }
+
         p {
             font-size: var(--fs-h4);
             line-height: 40px;
-            font-weight: 300;
             margin-bottom: 70px;
+            font-weight: 400;
+            font-family: var(--font-primary);
+            position: relative;
 
             &::before {
                 content: "";
                 position: absolute;
-                top: -90px;
-                left: -90px;
+                top: -60px;
+                left: -120px;
                 width: 160px;
                 height: 160px;
                 background: url(../img/quote/quotation.png) no-repeat center center;
-                background-size: 160px;
+                background-size: 100%;
                 opacity: 10%;
+
+                @include lg {
+                    top: -60px;
+                    left: -80px;
+                    width: 130px;
+                    height: 130px;
+                }
             }
 
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: -55px;
-                right: 45px;
-                width: 160px;
-                height: 160px;
-                background: url(../img/quote/signature.png) no-repeat center center;
-                background-size: 160px;
+            @include xxs {
+                margin-bottom: 60px;
             }
         }
 
@@ -85,12 +135,17 @@
             font-style: italic;
             font-weight: 300;
             color: #e7f0e8;
+            max-width: calc(100% - 210px);
 
             &::before {
                 @include before;
                 top: -35px;
                 height: 0.1px;
                 background: rgb(0 0 0 / 25%);
+
+                @include xxs {
+                    top: -30px;
+                }
             }
 
             &::after {
@@ -100,6 +155,29 @@
                 width: 80px;
                 height: 0.1px;
                 background: rgb(255 255 255 / 64%);
+
+                @include xxs {
+                    content: none;
+                }
+            }
+
+            @include lg {
+                max-width: calc(100% - 160px);
+            }
+
+            @include md {
+                max-width: calc(100% - 210px);
+            }
+
+            @include sm {
+                margin: 0 auto;
+                max-width: none;
+            }
+
+            @include xxs {
+                padding: 0;
+                display: flex;
+                flex-direction: column;
             }
 
             small {
@@ -108,6 +186,35 @@
                 margin-left: 10px;
                 font-style: normal;
                 border-left: 1px solid #e7f0e8;
+
+                @include xxs {
+                    padding-left: 0;
+                    margin-left: 0;
+                    border-left: 0;
+                    padding-top: 8px;
+                }
+            }
+        }
+
+        & > img {
+            position: absolute;
+            width: 160px;
+            right: 50px;
+            bottom: -25px;
+
+            @include lg {
+                right: 0;
+            }
+
+            @include md {
+                right: 50px;
+            }
+
+            @include sm {
+                top: 100%;
+                left: 50%;
+                translate: -50%;
+                width: 120px;
             }
         }
     }

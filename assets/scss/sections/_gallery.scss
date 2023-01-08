@@ -8,10 +8,11 @@
             align-items: center;
             flex-direction: column;
             text-transform: uppercase;
-            font-weight: 500;
             row-gap: 15px;
             letter-spacing: 1px;
             color: #8f9793;
+            font-weight: 500;
+            font-family: var(--font-secondary);
 
             &__img-container {
                 padding: 10px;

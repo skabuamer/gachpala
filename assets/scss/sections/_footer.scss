@@ -144,6 +144,7 @@
     margin-bottom: 0;
     font-size: 15px;
     color: #b1b1b1;
+    font-family: var(--font-primary);
 
     @include md {
         text-align: center;

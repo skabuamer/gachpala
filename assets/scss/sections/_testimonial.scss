@@ -32,8 +32,8 @@
         }
 
         .btn-custom-1 {
-            border: 1px solid #dfdfdf;
-            line-height: 55px;
+            border: 2px solid #dfdfdf;
+            line-height: 46px;
         }
     }
 }
@@ -111,6 +111,13 @@
 
     &__name {
         text-transform: capitalize;
+        font-family: var(--font-3);
+    }
+
+    .label {
+        text-transform: capitalize;
+        font-family: var(--font-secondary);
+        font-weight: 400;
     }
 }
 
@@ -143,8 +150,4 @@
             font-size: 10px;
         }
     }
-}
-
-.label {
-    text-transform: capitalize;
 }

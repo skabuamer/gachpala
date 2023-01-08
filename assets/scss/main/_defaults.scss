@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: var(--font-primary);
+    font-weight: 600;
     background: var(--white);
 }
 
@@ -30,12 +31,21 @@ button {
 
 .section-spacing {
     padding: 120px 0;
+
+    @include sm {
+        padding: 60px 0;
+    }
 }
 
 .section-heading {
     text-align: center;
     margin-bottom: 100px;
     position: relative;
+    font-family: var(--font-secondary);
+
+    @include xs {
+        margin-bottom: 85px;
+    }
 
     &::before {
         position: absolute;
@@ -75,6 +85,16 @@ h2.section-title {
     margin-bottom: 0;
     letter-spacing: 1px;
     color: #44504a;
+
+    @include md {
+        font-weight: 600;
+    }
+
+    @include sm {
+        br {
+            display: none;
+        }
+    }
 }
 
 .pt-5 {

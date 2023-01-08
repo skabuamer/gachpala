@@ -1,10 +1,17 @@
 /*-----------------------------------------------ABOUT STLYES-----------------------------------------------*/
+#about-section {
+    overflow: hidden;
+
+    > .container > .row {
+        row-gap: 50px;
+    }
+}
+
 .about-section {
     &__left-content {
         h3 {
             color: #5b6560;
-            font-size: 35px;
-            font-weight: 700;
+            font-weight: 600;
             margin-bottom: 22px;
         }
 
@@ -23,14 +30,52 @@
         align-items: center;
         row-gap: 40px;
 
+        @include lg {
+            flex-direction: row;
+            gap: 40px;
+            width: fit-content;
+            margin: 0 auto;
+            border: solid rgb(0 0 0 / 25%);
+            border-width: 1px 0;
+            padding: 30px 0;
+        }
+
+        @include md {
+            flex-direction: column;
+            border: none;
+            padding: 0;
+        }
+
+        @include sm {
+            flex-direction: row;
+            border: solid rgba(0, 0, 0, 0.25);
+            border-width: 1px 0px;
+            padding: 15px 0;
+        }
+
+        @include xxs {
+            gap: 20px;
+        }
+
         img {
             width: 120px;
+
+            @include xxs {
+                width: 80px;
+            }
         }
     }
 
     &__video {
         width: fit-content;
         position: relative;
+
+        @include md {
+            height: 260px;
+            overflow: hidden;
+            border-radius: 10px;
+            width: 100%;
+        }
 
         img {
             max-width: none;
@@ -40,6 +85,18 @@
             outline: 1px solid var(--white);
             outline-offset: -15px;
             filter: brightness(0.7);
+
+            @include md {
+                border-radius: 10px;
+                width: 100%;
+                max-height: 100%;
+                object-fit: cover;
+                object-position: 0 -50px;
+            }
+
+            @include xxs {
+                object-position: unset;
+            }
         }
     }
 }
@@ -52,6 +109,12 @@ span.highlighted-txt {
     font-style: italic;
     border-radius: 10px;
     @include gradient-primary-x;
+    font-weight: 500;
+    font-size: 18px;
+
+    @include xxs {
+        font-size: 16px;
+    }
 }
 
 .about-section__video-popup-btn {

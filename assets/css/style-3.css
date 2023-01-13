@@ -1,4 +1,10 @@
 /*-----------------------------------------------INDEX-3 PAGE STLYES-----------------------------------------------*/
+@media screen and (max-width: 991px) {
+  .sticky {
+    padding: 0;
+  }
+}
+
 header {
   background: linear-gradient(90deg, #519b5b, #3e7c4d);
   padding: 30px 0 0;

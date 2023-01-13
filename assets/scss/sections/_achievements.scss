@@ -1,3 +1,4 @@
+/*-----------------------------------------------ACHIEVEMENT STLYES-----------------------------------------------*/
 #achievement-section {
     padding: 80px 0;
     background-color: #f1f1f1;
@@ -7,17 +8,35 @@
         margin-bottom: 0;
         padding-left: 70px;
 
+        @include lg {
+            text-align: center;
+            margin-bottom: 100px;
+            padding-left: 0;
+
+            .section-title {
+                font-size: var(--fs-h2);
+            }
+        }
+
         &::before,
         &::after {
             left: 0;
             translate: 0;
             top: 0;
         }
+
         &::before {
             rotate: 90deg;
             transform-origin: left;
             top: -25px;
             width: 200px;
+
+            @include lg {
+                rotate: 0deg;
+                top: calc(100% + 50px);
+                left: 50%;
+                translate: -50% 0;
+            }
         }
 
         &::after {
@@ -25,6 +44,13 @@
             left: -30px;
             height: 65px;
             background-color: #f1f1f1;
+
+            @include lg {
+                top: calc(100% + 25px);
+                left: 50%;
+                height: 45px;
+                translate: -50% 0;
+            }
         }
     }
 
@@ -35,10 +61,28 @@
 
 .achievements {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 35px;
+
+    @include lg {
+        justify-content: center;
+        column-gap: 60px;
+    }
+
+    @include sm {
+        column-gap: 35px;
+    }
+
+    @include xs {
+        row-gap: 25px;
+    }
 }
 .single-achievement {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__img {
         width: 110px;
@@ -48,12 +92,26 @@
         border: 2px solid #346b46;
         border-radius: 50%;
         margin-bottom: 15px;
+
+        @include xs {
+            width: 90px;
+            height: 90px;
+        }
     }
 
     &__amount {
         color: #5a6560;
         font-size: 40px;
         font-weight: 300;
+        font-family: var(--font-primary) !important;
+
+        @include sm {
+            font-size: 35px;
+        }
+
+        @include xs {
+            font-size: 30px;
+        }
     }
 
     &__name {

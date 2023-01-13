@@ -1,6 +1,14 @@
+/*-----------------------------------------------BLOG STLYES-----------------------------------------------*/
 #blog-section {
-    .row > * {
-        padding: 0 15px;
+    > .container {
+        & > .row {
+            row-gap: 35px;
+            justify-content: center;
+
+            & > * {
+                padding: 0 15px;
+            }
+        }
     }
 }
 
@@ -14,8 +22,12 @@
         border: solid;
         border-image-source: linear-gradient(180deg, var(--secondary-clr), transparent);
         border-image-slice: 1;
-        padding: 0 0px 0 15px;
-        border-width: 0px 0px 0 2px;
+        padding: 0 10px;
+        border-width: 0px 1px;
+
+        @include xs {
+            padding: 0 15px;
+        }
     }
 
     &__title {
@@ -35,6 +47,11 @@
         font-weight: 500;
         color: var(--primary-clr);
         font-family: var(--font-secondary);
+
+        @include xxs {
+            font-size: 14px;
+        }
+
         i {
             margin-right: 5px;
         }
@@ -42,5 +59,9 @@
 
     &__txt {
         text-align: justify;
+
+        @include lg {
+            font-size: 15px;
+        }
     }
 }

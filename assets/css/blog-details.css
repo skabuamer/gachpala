@@ -1,3 +1,4 @@
+/*-----------------------------------------------BLOG DETAILS STLYES-----------------------------------------------*/
 .blog-comments {
   background: #fafafa;
   border: 1px solid #e8e9e8;
@@ -5,10 +6,25 @@
   padding: 40px;
   margin-top: 40px;
 }
+@media screen and (max-width: 575px) {
+  .blog-comments {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .blog-comments {
+    padding: 20px 15px;
+  }
+}
 .blog-comments__heading {
   display: flex;
   gap: 20px;
   align-items: center;
+}
+@media screen and (max-width: 479px) {
+  .blog-comments__heading {
+    flex-direction: column;
+  }
 }
 .blog-comments__title {
   text-transform: capitalize;
@@ -27,6 +43,23 @@
   padding-top: 30px;
   border-top: 1px dotted #c2c6c4;
   margin-top: 25px;
+}
+@media screen and (max-width: 767px) {
+  .single-comment {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .single-comment {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .single-comment {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 .single-comment__user-img {
   width: 85px;
@@ -48,6 +81,11 @@
   margin-bottom: 0;
   color: #777777;
   text-align: justify;
+}
+@media screen and (max-width: 767px) {
+  .single-comment__txt {
+    font-size: -14px;
+  }
 }
 .single-comment--reply {
   margin-left: 40px;

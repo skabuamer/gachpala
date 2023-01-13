@@ -11,6 +11,12 @@ header {
     }
 }
 
+.logo {
+    @include md {
+        width: 150px;
+    }
+}
+
 .navbar-nav {
     column-gap: 40px;
 
@@ -114,7 +120,7 @@ header {
     visibility: hidden;
     transform: translateY(-10px);
     transition: var(--transition);
-    z-index: 1;
+    z-index: 2;
     box-shadow: 0 10px 10px rgb(34 52 36 / 35%);
 
     @include md {

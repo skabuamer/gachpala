@@ -1,4 +1,6 @@
 @import "../main/mixins";
+@import "../main/breakpoints";
+/*-----------------------------------------------INDEX-2 PAGE STLYES-----------------------------------------------*/
 header {
     padding: 0;
 }
@@ -8,18 +10,33 @@ header {
     padding: 15px 0;
     color: var(--white);
 
+    @include md {
+        text-align: center;
+    }
+
+    & > .container > .row {
+        row-gap: 15px;
+    }
+
     &__txt {
         text-transform: capitalize;
     }
 
     &__right-content {
         gap: 25px;
+
+        @include sm {
+            gap: 15px;
+        }
     }
 }
 
 .server-time {
     &__title {
         margin-right: 10px;
+        @include xxs {
+            display: none;
+        }
     }
 
     &__date-and-time {
@@ -62,6 +79,11 @@ header {
         }
     }
 }
+.header-bottom {
+    @include md {
+        padding: 10px 0;
+    }
+}
 
 #hero-section {
     background-image: none;
@@ -83,6 +105,11 @@ header {
     text-align: center;
 }
 .single-stat {
+    flex-direction: row;
+    @include sm {
+        flex-direction: column;
+    }
+
     &__img-container {
         border: 2px dashed var(--primary-clr);
         border-radius: 50%;
@@ -94,5 +121,10 @@ header {
         border-radius: 0;
         width: 53px;
         height: 53px;
+
+        @include xs {
+            width: 40px;
+            height: 40px;
+        }
     }
 }

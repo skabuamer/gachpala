@@ -1,7 +1,13 @@
+/*-----------------------------------------------ERROR STLYES-----------------------------------------------*/
 #error-404 {
   background-color: #dfdfdf;
 }
 
+@media screen and (max-width: 991px) {
+  .error__content {
+    text-align: center;
+  }
+}
 .error__subtitle {
   font-size: 22px;
   color: rgba(68, 80, 74, 0.8);
@@ -14,6 +20,22 @@
   font-size: 90px;
   font-weight: 700;
 }
+@media screen and (max-width: 991px) {
+  .error__title {
+    margin: auto;
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .error__title {
+    font-size: 75px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .error__title {
+    font-size: 65px;
+  }
+}
 .error__txt {
   font-size: 18px;
   color: #666e6a;
@@ -24,4 +46,9 @@
   border-radius: 50%;
   outline-offset: -20px;
   outline: 1px solid #dfdfdf;
+}
+@media screen and (max-width: 991px) {
+  .error__img {
+    display: none;
+  }
 }/*# sourceMappingURL=error.css.map */

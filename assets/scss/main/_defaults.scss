@@ -1,3 +1,4 @@
+/*-----------------------------------------------DEFAULT STLYES-----------------------------------------------*/
 body {
     margin: 0;
     padding: 0;
@@ -37,66 +38,28 @@ button {
     }
 }
 
-.section-heading {
-    text-align: center;
-    margin-bottom: 100px;
-    position: relative;
-    font-family: var(--font-secondary);
-
-    @include xs {
-        margin-bottom: 85px;
-    }
-
-    &::before {
-        position: absolute;
-        content: "";
-        top: 135%;
-        left: 50%;
-        translate: -50% -120%;
-        background: #68b643;
-        height: 0.1px;
-        width: 230px;
-    }
-
-    &::after {
-        position: absolute;
-        content: "";
-        top: 165%;
-        left: 50%;
-        translate: -50% -120%;
-        background: url(../img/icon/leaf-icon.png) no-repeat center center;
-        height: 45px;
-        width: 60px;
-        background-size: 40px;
-        background-color: var(--white);
-    }
-}
-
-span.section-subtitle {
-    color: #30694b;
-    margin-bottom: 10px;
-    display: block;
-    font-weight: 600;
-    letter-spacing: 2px;
-}
-
-h2.section-title {
-    text-transform: capitalize;
-    margin-bottom: 0;
-    letter-spacing: 1px;
-    color: #44504a;
-
+.sticky {
+    position: fixed;
+    z-index: 111;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 1s ease;
+    padding: 0;
+    background: #fff;
     @include md {
-        font-weight: 600;
-    }
-
-    @include sm {
-        br {
-            display: none;
-        }
+        padding: 10px 0;
     }
 }
 
-.pt-5 {
-    padding-top: 70px !important;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }

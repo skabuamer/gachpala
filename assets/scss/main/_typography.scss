@@ -2,25 +2,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Titillium+Web:wght@300;400;600;700&display=swap");
 
-@include xxl {
+:root {
+    /* --- Fonts --- */
+    --font-primary: "Titillium Web", sans-serif;
+    --font-secondary: "Roboto", sans-serif;
+    --font-3: "Raleway", sans-serif;
+    --fs-xl: 70px;
+    --fs-h2: 35px;
+    --fs-h3: 30px;
+    --fs-h4: 25px;
+    --fs-h5: 25px;
+    --fs-h6: 20px;
 }
 
 @include xl {
+    :root {
+        --fs-xl: 65px;
+    }
 }
 
 @include lg {
+    :root {
+        --fs-xl: 50px;
+        --fs-h4: 22px;
+    }
 }
 
 @include md {
+    :root {
+        --fs-xl: 50px;
+        --fs-h2: 30px;
+        --fs-h3: 28px;
+    }
 }
 
 @include sm {
+    :root {
+        --fs-xl: 40px;
+        --fs-h2: 27px;
+        --fs-h3: 25px;
+    }
 }
 
 @include xs {
+    :root {
+        --fs-xl: 38px;
+        --fs-h2: 25px;
+        --fs-h6: 18px;
+    }
 }
 
 @include xxs {
+    :root {
+        --fs-xl: 30px;
+        --fs-h2: 20px;
+        --fs-h3: 20px;
+        --fs-h4: 20px;
+    }
 }
 
 h1 {

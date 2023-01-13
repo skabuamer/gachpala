@@ -1,11 +1,27 @@
+/*-----------------------------------------------INDEX-3 PAGE STLYES-----------------------------------------------*/
 header {
   background: linear-gradient(90deg, #519b5b, #3e7c4d);
   padding: 30px 0 0;
+}
+@media screen and (max-width: 575px) {
+  header {
+    padding: 0;
+  }
 }
 header > .container {
   background: var(--white);
   padding: 0 12px;
   border-radius: 15px;
+}
+@media screen and (max-width: 991px) {
+  header > .container {
+    padding: 10px 12px;
+  }
+}
+@media screen and (max-width: 575px) {
+  header > .container {
+    border-radius: 0;
+  }
 }
 
 #hero-section {
@@ -21,6 +37,20 @@ header > .container {
   background: url(../img/hero/banner-img-3.png) no-repeat 255px 100%;
   background-size: 800px 580px;
 }
+@media screen and (max-width: 1199px) {
+  #hero-section::before {
+    width: 680px;
+    background-size: 750px 580px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #hero-section::before {
+    background: url(../img/hero/banner-img-3.png) no-repeat 0 100%;
+    background-size: 100%;
+    opacity: 0.5;
+    filter: blur(3.5px);
+  }
+}
 #hero-section > .container::before {
   content: none;
 }
@@ -32,11 +62,19 @@ header > .container {
   color: var(--white);
   margin-right: 150px;
 }
-.hero-content-bottom {
-  grid-area: 60px;
+@media screen and (max-width: 991px) {
+  .hero-content__txt {
+    margin-right: 0;
+  }
 }
 .hero-content-bottom .single-stat {
   gap: 15px;
+  flex-direction: row;
+}
+@media screen and (max-width: 767px) {
+  .hero-content-bottom .single-stat {
+    flex-direction: column;
+  }
 }
 .hero-content-bottom .single-stat__img {
   background: #dfdfdf;
@@ -57,6 +95,11 @@ header > .container {
   border: 2px solid var(--white);
   line-height: 45px;
 }
+@media screen and (max-width: 479px) {
+  .hero-btns .btn-custom-1 {
+    line-height: 36px;
+  }
+}
 .hero-btns .btn-custom-1:hover {
   color: var(--secondary-clr);
   background: var(--white);
@@ -67,6 +110,11 @@ header > .container {
 .hero-btns .btn-custom-2 {
   border: 2px solid #fff;
   line-height: 45px;
+}
+@media screen and (max-width: 479px) {
+  .hero-btns .btn-custom-2 {
+    line-height: 36px;
+  }
 }
 .hero-btns .btn-custom-2::before {
   border-radius: 8px;

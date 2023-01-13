@@ -137,6 +137,10 @@ span.highlighted-txt {
     text-align: center;
     background-color: var(--white);
 
+    &:hover {
+        color: var(--primary-clr);
+    }
+
     &:focus {
         outline: 1px solid var(--secondary-clr);
     }

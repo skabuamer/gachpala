@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gachpala</title>
+
+    <title>Greenify - Natural Plants Supplier HTML Template</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
 
     <!-- FONT AWESOME CSS -->
     <link rel="stylesheet" href="assets/vendor/font_awesome/css/fontawesome.css">
+
+    <!-- ODO-METER CSS -->
+    <link rel="stylesheet" href="assets/vendor/odo-meter/odometer-theme-default.css">
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -30,7 +36,9 @@
                     <div class="row align-items-center">
                         <div class="col-lg-12 col-9">
                             <div class="logo-container">
-                                <img src="assets/img/logo.png" alt="logo" class="logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo.png" alt="logo" class="logo">
+                                </a>
                             </div>
                         </div>
 
@@ -47,7 +55,9 @@
                     <div class="navbar p-0 navbar-expand-lg">
                         <div class="offcanvas offcanvas-start" tabindex="-1" id="nav-menu" aria-labelledby="nav-menuLabel">
                             <div class="offcanvas-header">
-                                <img class="offcanvas-title logo" id="nav-menuLabel" src="assets/img/logo.png" alt="logo">
+                                <a href="index.html" class="offcanvas-title ">
+                                    <img class="logo" id="nav-menuLabel" src="assets/img/logo.png" alt="logo">
+                                </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
@@ -91,7 +101,7 @@
                                 </ul>
 
 
-                                <a href="#" class="btn-custom-1">Join Us <i class="fa-light fa-comment"></i></a>
+                                <a href="registar.html" class="btn-custom-1">Join Us <i class="fa-light fa-comment"></i></a>
                             </div>
                         </div>
                     </div>
@@ -110,7 +120,7 @@
                     <div class="inner-page-heading__content">
                         <h2 class="inner-page-heading__title">About Us</h2>
                         <ul class="inner-page-heading__breadcrumb">
-                            <li><a href="#">home</a></li>
+                            <li><a href="index.html">home</a></li>
                             <li>About Us</li>
                         </ul>
                     </div>
@@ -129,28 +139,30 @@
                     <h2 class="section-title">We've a high priority for our valuable <br> customers, suppliers and partners</h2>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-5">
+                <div class="row justify-content-between">
+                    <div class="col-xl-5 col-lg-6 col-md-8">
                         <div class="about-section__left-content">
                             <h3>We do not just grow plants…we love doing it!</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, rerum in eos iusto quae expedita a quaerat exercitationem, dicta cumque pariatur fugit voluptatum? <span class="highlighted-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis necessitatibus, maiores ut quia minus est?</span> Temporibus quaerat recusandae iusto officia velit nam vero? Modi similique quas voluptate et libero est vitae ipsum eius. Dolores, sed? Impedit debitis laborum quis deleniti explicabo. Neque?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, rerum in eos iusto quae expedita a quaerat exercitationem, dicta cumque pariatur fugit voluptatum? <span class="highlighted-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis necessitatibus, maiores ut quia minus est?</span> Temporibus quaerat recusandae iusto officia velit nam vero? Modi similique quas voluptate et libero est vitae ipsum eius. Dolores, sed?</p>
 
-                            <a href="#" class="btn-custom-2">know more <i class="fa-light fa-arrow-right-long"></i></a>
+                            <a href="about.html" class="btn-custom-2">know more <i class="fa-light fa-arrow-right-long"></i></a>
                         </div>
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-12 col-md-3 order-2 order-lg-3 order-xl-2">
                         <div class="about-section__badge-container">
-                            <img src="assets/img/badges/badge-1.png" alt="">
-                            <img src="assets/img/badges/badge-2.png" alt="">
-                            <img src="assets/img/badges/badge-3.png" alt="">
+                            <img src="assets/img/badges/badge-1.png" alt="badge">
+                            <img src="assets/img/badges/badge-2.png" alt="badge">
+                            <img src="assets/img/badges/badge-3.png" alt="badge">
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-xl-4 col-lg-5 order-3 order-lg-2 order-xl-3">
                         <div class="about-section__video">
-                            <img src="assets/img/about/about-img.jpg" alt="">
-                            <a class="about-section__video-popup-btn" href="#"><i class="fa-solid fa-play"></i></a>
+                            <img src="assets/img/about/about-img.jpg" alt="people-looking">
+                            <a class="about-section__video-popup-btn" data-fslightbox="second-lightbox" href="https://www.youtube.com/watch?v=p3St51F4kE8">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -164,19 +176,23 @@
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-lg-3 position-relative">
-                        <div class="quote-section__img">
-                            <img src="assets/img/quote/quote-img.jpg" alt="">
-                        </div>
-                        <div class="quote-section__vid">
-                            <img src="assets/img/quote/quote-vid.jpg" alt="">
-                            <button class="quote-section__btn"><i class="fa-light fa-play-circle"></i></button>
+                        <div class="quote-section__vid-btn">
+                            <img src="assets/img/quote/quote-img.jpg" alt="girl smiling" class="quote-section__img">
+                            <div class="quote-section__vid">
+                                <img src="assets/img/quote/quote-vid.jpg" alt="leaf with drop of water">
+                                <a class="quote-section__btn" data-fslightbox="second-lightbox" href="https://www.youtube.com/watch?v=p3St51F4kE8">
+                                    <i class="fa-light fa-play-circle"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-lg-7">
                         <div class="quote-section__txt">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iste sequi fugiat, consectetur eos animi rerum. Omnis laboriosam ipsam</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iste sequi fugiat, consectetur eos animi rerum. Omnis laboriosam ipsam
+                            </p>
                             <h5>Michel Jasin <small>CEO of Nursio</small></h5>
+                            <img src="assets/img/quote/signature.png" alt="signature">
                         </div>
                     </div>
                 </div>
@@ -189,27 +205,27 @@
         <section id="achievement-section">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-xl-6 order-2 order-xl-1">
                         <div class="achievements">
                             <div class="single-achievement">
-                                <img src="assets/img/achievement/plant-pot.png" alt="" class="single-achievement__img">
-                                <h4 class="single-achievement__amount">2501</h4>
+                                <img src="assets/img/achievement/plant-pot.png" alt="plant-pot" class="single-achievement__img">
+                                <h4 class="single-achievement__amount odometer-1">2501</h4>
                                 <h5 class="single-achievement__name">TOTAL PROJECTS</h5>
                             </div>
                             <div class="single-achievement">
-                                <img src="assets/img/achievement/planet-earth.png" alt="" class="single-achievement__img">
-                                <h4 class="single-achievement__amount">4700</h4>
+                                <img src="assets/img/achievement/planet-earth.png" alt="planet-earth" class="single-achievement__img">
+                                <h4 class="single-achievement__amount odometer-2">4700</h4>
                                 <h5 class="single-achievement__name">HAPPIY CUSTOMERS</h5>
                             </div>
                             <div class="single-achievement">
-                                <img src="assets/img/achievement/save-nature.png" alt="" class="single-achievement__img">
-                                <h4 class="single-achievement__amount">3201</h4>
+                                <img src="assets/img/achievement/save-nature.png" alt="nature" class="single-achievement__img">
+                                <h4 class="single-achievement__amount odometer-3">3201</h4>
                                 <h5 class="single-achievement__name">HOME DELIVERY</h5>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-5">
+                    <div class="col-xl-5 order-1 order-xl-2">
                         <div class="section-heading">
                             <span class="section-subtitle">OUR ACHIVEMENTS</span>
                             <h2 class="section-title">Achivements we've done!</h2>
@@ -225,11 +241,11 @@
         <section id="cta-section" class="bg-defaults">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-8">
+                    <div class="col-md-8 col-sm-7">
                         <h3 class="cta-title">If you have any query about us.</h3>
                     </div>
 
-                    <div class="col-lg-4 text-end">
+                    <div class="col-md-4 col-sm-5 text-sm-end text-center">
                         <a href="contact.html" class="btn-custom-1">contact us</a>
                     </div>
                 </div>
@@ -246,22 +262,25 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="contact-info-container">
+                    <div class="col-xl-6 col-lg-7 align-self-center">
+                        <div class="contact-info-container justify-content-center">
                             <div class="single-info">
                                 <span class="single-info__icon"><i class="fa-solid fa-location-arrow"></i></span>
-                                <span class="address">799 Kidd Avenue. Cape Romanzof, AK. Alaska - 99604</span>
+                                <span class="address">799 Kidd Avenue. Cape Romanzof,<br> AK. Alaska - 99604</span>
                             </div>
+
                             <div class="single-info">
                                 <span class="single-info__icon"><i class="fa-solid fa-phone"></i></span>
                                 <a href="tel:907-795-7844">907-795-7844</a>
                                 <a href="tel:907-320-8385">907-320-8385</a>
                             </div>
+
                             <div class="single-info">
                                 <span class="single-info__icon"><i class="fa-solid fa-envelope"></i></span>
                                 <a href="mailto:Camease1929@superrito.com">Camease1929@superrito.com</a>
                                 <a href="mailto:Superrito@camease1929.com">Superrito@camease1929.com</a>
                             </div>
+
                             <div class="single-info">
                                 <span class="single-info__icon"><i class="fa-solid fa-globe"></i></span>
                                 <a href="#">www.lorem.ipsum</a>
@@ -270,8 +289,8 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
-                        <img src="assets/img/contact/maps.png" alt="">
+                    <div class="col-xl-6 col-lg-5">
+                        <img src="assets/img/contact/maps.png" alt="location" class="contact-info__img">
                     </div>
                 </div>
             </div>
@@ -285,10 +304,10 @@
                 <h2>Message to us.</h2>
                 <form action="#" class="contact-form">
                     <div class="row">
-                        <div class="col-xl-6">
+                        <div class="col-md-6">
                             <input type="text" name="contact-form__first-name" id="contact-form__first-name" placeholder="First Name">
                         </div>
-                        <div class="col-xl-6">
+                        <div class="col-md-6">
                             <input type="text" name="contact-form__last-name" id="contact-form__last-name" placeholder="Last Name">
                         </div>
 
@@ -318,7 +337,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6 col-sm-10 col-12">
                         <div class="footer__txt">
-                            <img src="assets/img/logo1.png" alt="" class="footer-logo">
+                            <img src="assets/img/logo.png" alt="logo" class="footer-logo">
 
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestiae ad adipisci at dignissimos quae hic repudiandae. Magnam autem, tenetur architecto inventore in neque quisquam nulla repellat sequi vero sint.</p>
 
@@ -386,7 +405,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
-                        <p class="copyright">&copy; 2022, Gachpala. ALL RIGHT RESERVED</p>
+                        <p class="copyright">&copy; 2022, Greenify. ALL RIGHT RESERVED</p>
                     </div>
 
                     <div class="col-lg-8">
@@ -407,8 +426,29 @@
     <!-- --------------- FOOTER SECTION ENDS --------------- -->
 
 
+    <!-- --------------- BACK TO TOP BUTTON START --------------- -->
+    <div class="back__to__top">
+        <i class="fa-light fa-turn-up"></i>
+    </div>
+    <!-- --------------- BACK TO TOP BUTTON END --------------- -->
+
+    <!-- JQUERY JS -->
+    <script src="assets/vendor/jquery/jquery-3.6.3.min.js"></script>
+
     <!-- BOOTSTRAP JS -->
     <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+    <!-- TINY SLIDER JS -->
+    <script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
+
+    <!-- ODO-METER JS -->
+    <script src="assets/vendor/odo-meter/odometer.min.js"></script>
+
+    <!-- ODO-METER INITIALIZED JS -->
+    <script src="assets/js/odometer.js"></script>
+
+    <!-- FS-LIGHTBOX JS -->
+    <script src="assets/vendor/fslightbox.js"></script>
 
     <!-- CUSTOM JS -->
     <script src="assets/js/main.js"></script>

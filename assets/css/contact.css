@@ -1,15 +1,27 @@
+/*-----------------------------------------------CONTACT STLYES-----------------------------------------------*/
 #contact-info-section {
   padding: 120px 0 60px;
 }
+@media screen and (max-width: 767px) {
+  #contact-info-section {
+    padding: 60px 0;
+  }
+}
 
 .contact-info-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+}
+@media screen and (max-width: 991px) {
+  .contact-info-container {
+    margin-bottom: 30px;
+  }
 }
 
 .single-info {
   display: flex;
+  flex: auto;
   flex-direction: column;
   border: 1px solid #eaebea;
   padding: 20px;
@@ -37,19 +49,64 @@
   color: var(--black);
 }
 
+.contact-info__img {
+  object-fit: cover;
+}
+@media screen and (max-width: 1199px) {
+  .contact-info__img {
+    height: 100%;
+  }
+}
+
 .contact-form-section {
   background-image: linear-gradient(to right bottom, var(--primary-clr), var(--secondary-clr));
   padding: 50px;
   border-radius: 15px;
   margin-bottom: 120px;
 }
+@media screen and (max-width: 767px) {
+  .contact-form-section {
+    padding: 35px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .contact-form-section {
+    padding: 20px 15px;
+  }
+}
 .contact-form-section h2 {
   color: var(--white);
   margin-bottom: 30px;
 }
+@media screen and (max-width: 991px) {
+  .contact-form-section h2 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-form-section h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .contact-form-section h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .contact-form-section h2 {
+    font-size: 27px;
+  }
+}
 
 .contact-form > .row {
   row-gap: 25px;
+}
+@media screen and (max-width: 575px) {
+  .contact-form > .row {
+    row-gap: 15px;
+  }
 }
 .contact-form input,
 .contact-form textarea {
@@ -63,7 +120,13 @@
 .contact-form textarea:focus {
   outline: 2px solid #474747;
 }
+@media screen and (max-width: 575px) {
+  .contact-form input,
+.contact-form textarea {
+    padding: 10px 15px;
+  }
+}
 .contact-form .btn-custom-1 {
   border: 2px solid #dfdfdf;
-  line-height: 45px;
+  line-height: normal;
 }/*# sourceMappingURL=contact.css.map */

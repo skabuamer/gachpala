@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/pages/error.scss"],"names":[],"mappings":"AAAA;EACI;;;AAIA;EACI;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA","file":"error.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/pages/error.scss","../scss/main/_breakpoints.scss"],"names":[],"mappings":"AAEA;AACA;EACI;;;ACyBA;EDrBA;IAEQ;;;AAIR;EACI;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;;ACIJ;EDVA;IASQ;IACA;;;ACNR;EDJA;IAcQ;;;AChBR;EDEA;IAkBQ;;;AAIR;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;;ACtBJ;EDmBA;IAKQ","file":"error.css"}

@@ -1,3 +1,4 @@
+/*-----------------------------------------------TESTIMONIAL STLYES-----------------------------------------------*/
 #testimonial-section {
     background: url(../img/bg/deg-bg.jpg) center center repeat;
     background-size: contain;
@@ -11,10 +12,21 @@
         z-index: -1;
     }
 
+    > .container > .row {
+        @include md {
+            row-gap: 50px;
+        }
+    }
+
     .section-heading {
         margin-bottom: 0;
         text-align: left;
-        margin-right: 120px;
+        margin-right: 70px;
+
+        @include md {
+            text-align: center;
+            margin-right: 0;
+        }
 
         &::before,
         &::after {
@@ -28,12 +40,20 @@
         h2.section-title {
             color: #dfdfdf;
             margin-bottom: 30px;
-            font-size: 37px;
+            font-size: 38px;
+
+            @include md {
+                font-size: var(--fs-h2);
+            }
         }
 
         .btn-custom-1 {
             border: 2px solid #dfdfdf;
             line-height: 46px;
+
+            @include xxs {
+                line-height: 38px;
+            }
         }
     }
 }
@@ -42,8 +62,12 @@
     position: relative;
 }
 
+.single-feedback-container {
+    padding-top: 70px;
+}
+
 .single-feedback {
-    background: linear-gradient(327deg, #2c5c3b, #4c9253);
+    background: #2e603d;
     text-align: center;
     border-radius: 20px;
     position: relative;
@@ -51,16 +75,41 @@
     padding: 45px 30px;
     padding-top: 100px;
 
+    @include sm {
+        padding: 45px 25px;
+        padding-top: 100px;
+    }
+
+    @include xs {
+        padding: 45px 20px;
+        padding-top: 100px;
+    }
+
+    @include xxs {
+        padding: 45px 15px;
+        padding-top: 80px;
+    }
+
     &::before {
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 95%;
-        height: 92%;
+        width: calc(100% + -30px);
+        height: calc(100% + -30px);
         border: 1px solid #ffffff4a;
         content: "";
         translate: -50% -50%;
         border-radius: 10px;
+
+        @include xs {
+            width: calc(100% + -25px);
+            height: calc(100% + -25px);
+        }
+
+        @include xs {
+            width: calc(100% + -15px);
+            height: calc(100% + -15px);
+        }
     }
 
     &__user {
@@ -73,6 +122,11 @@
         border-radius: 50%;
         outline: 1px solid #fff;
         outline-offset: -10px;
+
+        @include xxs {
+            width: 125px;
+            height: 125px;
+        }
     }
 
     &__txt {
@@ -82,6 +136,18 @@
         position: relative;
         margin-bottom: 20px;
         padding-bottom: 70px;
+
+        @include sm {
+            font-size: 18px;
+        }
+
+        @include xs {
+            font-size: 16px;
+        }
+
+        @include xxs {
+            font-size: 14px;
+        }
 
         &::before {
             @include before;
@@ -112,12 +178,19 @@
     &__name {
         text-transform: capitalize;
         font-family: var(--font-3);
+        @include xs {
+            font-size: 20px;
+        }
     }
 
     .label {
         text-transform: capitalize;
         font-family: var(--font-secondary);
         font-weight: 400;
+
+        @include xs {
+            font-size: 15px;
+        }
     }
 }
 
@@ -133,21 +206,37 @@
     translate: 0 -50%;
     border-radius: 10px;
 
-    button {
-        color: #fff;
-        font-size: 0px;
+    @include xs {
+        right: -10px;
+    }
+
+    .feedback-slider__nav-btns {
         border-radius: 50%;
         border: 1px solid #fff;
         width: 15px;
         height: 15px;
-        line-height: 11px;
-        padding: 0;
-        padding-left: 1px;
         @include gradient-primary-y;
-        transition: var(--transition);
+        padding: 0;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            background: #fff;
+            top: 0;
+            left: 0;
+            transition: var(--transition);
+            width: 0;
+            height: 0;
+        }
 
         &.tns-nav-active {
-            font-size: 10px;
+            &::before {
+                border: 1.5px solid #2e6141;
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 }

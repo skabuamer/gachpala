@@ -1,14 +1,26 @@
 @import "../main/breakpoints";
 @import "../main/mixins";
-
+/*-----------------------------------------------INDEX-3 PAGE STLYES-----------------------------------------------*/
 header {
     background: linear-gradient(90deg, #519b5b, #3e7c4d);
     padding: 30px 0 0;
+
+    @include xs {
+        padding: 0;
+    }
 
     > .container {
         background: var(--white);
         padding: 0 12px;
         border-radius: 15px;
+
+        @include md {
+            padding: 10px 12px;
+        }
+
+        @include xs {
+            border-radius: 0;
+        }
     }
 }
 
@@ -24,6 +36,18 @@ header {
         height: 100%;
         background: url(../img/hero/banner-img-3.png) no-repeat 255px 100%;
         background-size: 800px 580px;
+
+        @include lg {
+            width: 680px;
+            background-size: 750px 580px;
+        }
+
+        @include md {
+            background: url(../img/hero/banner-img-3.png) no-repeat 0 100%;
+            background-size: 100%;
+            opacity: 0.5;
+            filter: blur(3.5px);
+        }
     }
 
     > .container::before {
@@ -39,13 +63,20 @@ header {
     &__txt {
         color: var(--white);
         margin-right: 150px;
+
+        @include md {
+            margin-right: 0;
+        }
     }
 
     &-bottom {
-        grid-area: 60px;
-
         .single-stat {
             gap: 15px;
+            flex-direction: row;
+
+            @include sm {
+                flex-direction: column;
+            }
 
             &__img {
                 background: #dfdfdf;
@@ -72,7 +103,8 @@ header {
         border: 2px solid var(--white);
         line-height: 45px;
 
-        &::before {
+        @include xxs {
+            line-height: 36px;
         }
 
         &:hover {
@@ -89,13 +121,12 @@ header {
         border: 2px solid #fff;
         line-height: 45px;
 
-        &::before {
-            border-radius: 8px;
+        @include xxs {
+            line-height: 36px;
         }
 
-        &:hover {
-            &::before {
-            }
+        &::before {
+            border-radius: 8px;
         }
     }
 }

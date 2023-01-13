@@ -1,4 +1,12 @@
 /*-----------------------------------------------FEATURES STLYES-----------------------------------------------*/
+#features-section {
+    > .container > .row {
+        @include md {
+            row-gap: 45px;
+        }
+    }
+}
+
 .features-section__img {
     max-width: none;
     width: 450px;
@@ -7,6 +15,18 @@
     outline: 1px solid var(--white);
     outline-offset: -15px;
     filter: brightness(0.8);
+
+    @include md {
+        width: 100%;
+        border-radius: 10px;
+        height: 280px;
+        object-fit: cover;
+        object-position: 0px -50px;
+    }
+
+    @include xs {
+        object-position: 0 -20px;
+    }
 }
 
 .features {
@@ -14,12 +34,47 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 30px 20px;
     margin-left: 60px;
+
+    @include lg {
+        margin-left: 35px;
+    }
+
+    @include md {
+        margin-left: 0;
+    }
+
+    @include xs {
+        grid-template-columns: 90%;
+        place-content: center;
+    }
 }
 
 .single-feature {
     display: flex;
     align-items: flex-start;
     gap: 25px;
+
+    @include lg {
+        flex-direction: column;
+    }
+
+    @include md {
+        flex-direction: row;
+    }
+
+    @include sm {
+        flex-direction: column;
+    }
+
+    @include xs {
+        flex-direction: row;
+    }
+
+    @include xxs {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
     &__img {
         width: 80px;

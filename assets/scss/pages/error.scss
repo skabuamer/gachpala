@@ -1,8 +1,17 @@
+@import "../main/breakpoints";
+@import "../main/mixins";
+/*-----------------------------------------------ERROR STLYES-----------------------------------------------*/
 #error-404 {
     background-color: #dfdfdf;
 }
 
 .error {
+    &__content {
+        @include md {
+            text-align: center;
+        }
+    }
+
     &__subtitle {
         font-size: 22px;
         color: #44504acc;
@@ -15,6 +24,19 @@
         -webkit-background-clip: text;
         font-size: 90px;
         font-weight: 700;
+
+        @include md {
+            margin: auto;
+            margin-bottom: 0.5rem;
+        }
+
+        @include sm {
+            font-size: 75px;
+        }
+
+        @include xs {
+            font-size: 65px;
+        }
     }
 
     &__txt {
@@ -28,5 +50,8 @@
         border-radius: 50%;
         outline-offset: -20px;
         outline: 1px solid #dfdfdf;
+        @include md {
+            display: none;
+        }
     }
 }

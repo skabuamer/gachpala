@@ -1,3 +1,4 @@
+/*-----------------------------------------------GALLERY STLYES-----------------------------------------------*/
 #gallery-section {
     .nav-pills {
         justify-content: center;
@@ -14,12 +15,24 @@
             font-weight: 500;
             font-family: var(--font-secondary);
 
+            @include sm {
+                padding: 8px 0;
+            }
+
+            @include xs {
+                font-size: 14px;
+            }
+
             &__img-container {
                 padding: 10px;
                 width: 100px;
                 border: 2px solid lightgray;
                 border-radius: 50%;
                 position: relative;
+
+                @include xs {
+                    width: 80px;
+                }
 
                 &::before {
                     transition: var(--transition);
@@ -152,6 +165,9 @@
         margin-bottom: 0;
         font-weight: 400;
         transition: var(--transition);
+        @include xxs {
+            font-size: 20px;
+        }
 
         &::before {
             position: absolute;

@@ -1,3 +1,4 @@
+/*-----------------------------------------------INDEX-2 PAGE STLYES-----------------------------------------------*/
 header {
   padding: 0;
 }
@@ -7,15 +8,33 @@ header {
   padding: 15px 0;
   color: var(--white);
 }
+@media screen and (max-width: 991px) {
+  .header-top {
+    text-align: center;
+  }
+}
+.header-top > .container > .row {
+  row-gap: 15px;
+}
 .header-top__txt {
   text-transform: capitalize;
 }
 .header-top__right-content {
   gap: 25px;
 }
+@media screen and (max-width: 767px) {
+  .header-top__right-content {
+    gap: 15px;
+  }
+}
 
 .server-time__title {
   margin-right: 10px;
+}
+@media screen and (max-width: 479px) {
+  .server-time__title {
+    display: none;
+  }
 }
 .server-time__date-and-time {
   border: 1px solid #fff;
@@ -51,6 +70,12 @@ header {
   line-height: 36px;
 }
 
+@media screen and (max-width: 991px) {
+  .header-bottom {
+    padding: 10px 0;
+  }
+}
+
 #hero-section {
   background-image: none;
   padding: 170px 0 120px;
@@ -74,6 +99,14 @@ header {
   text-align: center;
 }
 
+.single-stat {
+  flex-direction: row;
+}
+@media screen and (max-width: 767px) {
+  .single-stat {
+    flex-direction: column;
+  }
+}
 .single-stat__img-container {
   border: 2px dashed var(--primary-clr);
   border-radius: 50%;
@@ -84,4 +117,10 @@ header {
   border-radius: 0;
   width: 53px;
   height: 53px;
+}
+@media screen and (max-width: 575px) {
+  .single-stat__img {
+    width: 40px;
+    height: 40px;
+  }
 }/*# sourceMappingURL=style-2.css.map */

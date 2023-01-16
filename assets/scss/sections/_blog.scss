@@ -19,11 +19,20 @@
     }
 
     &__content {
-        border: solid;
-        border-image-source: linear-gradient(180deg, var(--secondary-clr), transparent);
-        border-image-slice: 1;
-        padding: 0 10px;
-        border-width: 0px 1px;
+        padding-left: 25px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: calc(100% + -25px);
+            width: 30px;
+            border: 1px solid var(--primary-clr);
+            border-width: 0px 0px 1px 1px;
+            border-radius: 0 0 0 5px;
+        }
 
         @include xs {
             padding: 0 15px;
@@ -33,6 +42,8 @@
     &__title {
         text-transform: capitalize;
         margin-bottom: 18px;
+        font-weight: 600;
+        color: #47504c;
     }
 
     &__info {
@@ -44,9 +55,10 @@
     &__author,
     &__date {
         text-transform: capitalize;
-        font-weight: 500;
+        font-weight: 300;
         color: var(--primary-clr);
         font-family: var(--font-secondary);
+        font-size: 15px;
 
         @include xxs {
             font-size: 14px;
@@ -58,7 +70,8 @@
     }
 
     &__txt {
-        text-align: justify;
+        line-height: 28px;
+        margin-bottom: 21px;
 
         @include lg {
             font-size: 15px;

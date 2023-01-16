@@ -78,7 +78,6 @@
         background: #3f7e4e;
         color: #fff;
         font-size: 50px;
-        // padding: 50px;
         border-radius: 50%;
         width: 90%;
         height: 90%;
@@ -91,6 +90,8 @@
             top: 50%;
             left: 50%;
             translate: -50% -50%;
+            animation: shadow 1.2s ease-in infinite;
+            border-radius: 50%;
         }
     }
 
@@ -111,6 +112,7 @@
             font-weight: 400;
             font-family: var(--font-primary);
             position: relative;
+            margin-top: -11px;
 
             &::before {
                 content: "";

@@ -13,6 +13,7 @@
             color: #5b6560;
             font-weight: 600;
             margin-bottom: 22px;
+            margin-top: -8px;
         }
 
         p {
@@ -136,6 +137,8 @@ span.highlighted-txt {
     line-height: 65px;
     text-align: center;
     background-color: var(--white);
+    -webkit-animation: shadow 1s ease-in infinite;
+    animation: shadow 1.2s ease-in infinite;
 
     &:hover {
         color: var(--primary-clr);

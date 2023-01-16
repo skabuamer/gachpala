@@ -1,6 +1,6 @@
 /*-----------------------------------------------CTA STLYES-----------------------------------------------*/
 #cta-section {
-    padding: 30px 0;
+    padding: 40px 0;
     background-image: url(../img/bg/deg-bg.jpg);
     background-repeat: repeat;
     background-size: 500px;
@@ -23,8 +23,12 @@
     }
 
     .btn-custom-1 {
-        border: 2px solid #dfdfdf;
-        line-height: 45px;
+        background: var(--white);
+        color: var(--secondary-clr);
+
+        &:hover {
+            color: var(--white);
+        }
 
         @include xxs {
             line-height: 37px;
@@ -32,9 +36,22 @@
     }
 }
 
+.cta-section__img {
+    width: 245px;
+    height: 200px;
+    object-fit: cover;
+    filter: drop-shadow(2px 4px 2px);
+    scale: -1 1;
+    object-position: right;
+}
+
 .cta-title {
-    margin-bottom: 0;
+    margin-bottom: 20px;
     color: var(--white);
+}
+
+.subs-title {
+    margin-bottom: 0;
 }
 
 #subs-form {
@@ -48,6 +65,14 @@
         height: 45px;
         line-height: 1.8;
         font-size: 16px;
+        background: var(--secondary-clr);
+        color: var(--white);
+
+        @include xs {
+            position: static;
+            margin: 0 auto;
+            display: block;
+        }
     }
 }
 
@@ -57,11 +82,17 @@
     padding: 0px 20px;
     padding-right: 130px;
     border-radius: 10px;
-    // transition: all 0.4s ease;
+    transition: all 0.4s ease;
     color: #545454;
     margin-bottom: 0;
     height: 45px;
     border: none;
+    outline: 2px solid transparent;
+
+    @include xs {
+        margin-bottom: 15px;
+        padding-right: 20px;
+    }
 
     &:focus {
         outline: 2px solid var(--secondary-clr);

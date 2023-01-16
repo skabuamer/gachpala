@@ -218,18 +218,20 @@
 /*----------SECTION HEADING STLYES START----------*/
 .section-heading {
     text-align: center;
-    margin-bottom: 100px;
     position: relative;
     font-family: var(--font-secondary);
+    padding-bottom: 60px;
+    margin-bottom: calc(20px + 60px);
 
     @include xs {
-        margin-bottom: 85px;
+        margin-bottom: 55px;
+        padding-bottom: 50px;
     }
 
     &::before {
         position: absolute;
         content: "";
-        top: calc(100% + 50px);
+        top: 100%;
         left: 50%;
         translate: -50% 0;
         background: #68b643;
@@ -240,7 +242,7 @@
     &::after {
         position: absolute;
         content: "";
-        top: calc(100% + 25px);
+        top: calc(100% + -25px);
         left: 50%;
         translate: -50% 0;
         background: url(../img/icon/leaf-icon.png) no-repeat center center;
@@ -257,6 +259,7 @@ span.section-subtitle {
     display: block;
     font-weight: 600;
     letter-spacing: 2px;
+    margin-top: -5px;
 }
 
 h2.section-title {
@@ -487,5 +490,14 @@ input#search {
         &:hover {
             line-height: 30px;
         }
+    }
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 0 0 #9b9b9b, 0 0 0 0 #9b9b9b, 0 0 0 0 #9b9b9b;
+    }
+    100% {
+        box-shadow: 0 0 0 30px transparent, 0 0 0 29px transparent, 0 0 0 28px transparent;
     }
 }

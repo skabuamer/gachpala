@@ -72,6 +72,7 @@
         font-family: "Titillium Web", sans-serif;
         color: #44504a;
         font-weight: 700;
+        margin-top: -16px;
 
         @include lg {
             margin-bottom: 22px;
@@ -131,6 +132,7 @@
         line-height: 45px;
         color: var(--primary-clr);
         font-weight: 500;
+        margin-top: -10px;
 
         @include sm {
             font-size: 30px;

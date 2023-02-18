@@ -78,7 +78,7 @@
     border-radius: 20px;
     position: relative;
     color: #41464b;
-    padding: 45px 30px;
+    padding: 30px;
     padding-top: 100px;
 
     @include sm {
@@ -94,28 +94,6 @@
     @include xxs {
         padding: 45px 15px;
         padding-top: 80px;
-    }
-
-    &::before {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: calc(100% + -25px);
-        height: calc(100% + -25px);
-        border: 0.1px solid rgb(0 0 0 / 49%);
-        content: "";
-        translate: -50% -50%;
-        border-radius: 10px;
-
-        @include xs {
-            width: calc(100% + -25px);
-            height: calc(100% + -25px);
-        }
-
-        @include xs {
-            width: calc(100% + -15px);
-            height: calc(100% + -15px);
-        }
     }
 
     &__user {
@@ -222,8 +200,8 @@
     .feedback-slider__nav-btns {
         border-radius: 50%;
         border: 1px solid #fff;
-        width: 15px;
-        height: 15px;
+        width: 14px;
+        height: 14px;
         @include gradient-primary-y;
         padding: 0;
         position: relative;
@@ -233,8 +211,9 @@
             position: absolute;
             border-radius: 50%;
             background: #fff;
-            top: 0;
-            left: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             transition: var(--transition);
             width: 0;
             height: 0;
@@ -242,9 +221,8 @@
 
         &.tns-nav-active {
             &::before {
-                border: 1.5px solid #2e6141;
-                width: 100%;
-                height: 100%;
+                width: 10px;
+                height: 10px;
             }
         }
     }

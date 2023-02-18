@@ -193,7 +193,6 @@
     }
 
     &__breadcrumb {
-        list-style-position: inside;
         display: flex;
         gap: 20px;
         border: 1px solid var(--white);
@@ -202,7 +201,7 @@
         border-radius: 25px;
         padding: 8px 20px;
         text-transform: capitalize;
-        list-style-type: disclosure-closed;
+        list-style: none;
 
         @include xs {
             font-size: 15px;
@@ -210,6 +209,10 @@
 
         a {
             color: var(--white);
+        }
+
+        .current-page {
+            list-style: inside square;
         }
     }
 }
@@ -379,7 +382,7 @@ h2.section-title {
 
                 li {
                     border-bottom: none;
-                    margin-bottom: 0;
+                    padding-bottom: 0;
 
                     a {
                         border: 1px solid rgb(231 232 231);

@@ -2,10 +2,8 @@
 @import "../main/breakpoints";
 /*-----------------------------------------------CONTACT STLYES-----------------------------------------------*/
 #contact-info-section {
-    padding: 120px 0 60px;
-
     @include sm {
-        padding: 60px 0;
+        // padding: 60px 0;
     }
 }
 
@@ -61,9 +59,8 @@
 
 .contact-form-section {
     @include gradient-primary-x;
-    padding: 50px;
+    padding: 25px;
     border-radius: 15px;
-    margin-bottom: 120px;
 
     @include sm {
         padding: 35px;
@@ -106,7 +103,7 @@
     input,
     textarea {
         width: 100%;
-        padding: 15px 20px;
+        padding: 12px 15px;
         border-radius: 10px;
         border: none;
         background: #dfdfdf;
@@ -121,7 +118,12 @@
     }
 
     .btn-custom-1 {
-        border: 2px solid #dfdfdf;
+        background: #dfdfdf;
+        color: var(--secondary-clr);
         line-height: normal;
+
+        &:hover {
+            color: var(--white);
+        }
     }
 }

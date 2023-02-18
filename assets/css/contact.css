@@ -1,13 +1,4 @@
 /*-----------------------------------------------CONTACT STLYES-----------------------------------------------*/
-#contact-info-section {
-  padding: 120px 0 60px;
-}
-@media screen and (max-width: 767px) {
-  #contact-info-section {
-    padding: 60px 0;
-  }
-}
-
 .contact-info-container {
   display: flex;
   flex-wrap: wrap;
@@ -60,9 +51,8 @@
 
 .contact-form-section {
   background-image: linear-gradient(to right bottom, var(--primary-clr), var(--secondary-clr));
-  padding: 50px;
+  padding: 25px;
   border-radius: 15px;
-  margin-bottom: 120px;
 }
 @media screen and (max-width: 767px) {
   .contact-form-section {
@@ -111,7 +101,7 @@
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 15px 20px;
+  padding: 12px 15px;
   border-radius: 10px;
   border: none;
   background: #dfdfdf;
@@ -127,6 +117,10 @@
   }
 }
 .contact-form .btn-custom-1 {
-  border: 2px solid #dfdfdf;
+  background: #dfdfdf;
+  color: var(--secondary-clr);
   line-height: normal;
+}
+.contact-form .btn-custom-1:hover {
+  color: var(--white);
 }/*# sourceMappingURL=contact.css.map */

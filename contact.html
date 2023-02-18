@@ -118,7 +118,7 @@
                         <h2 class="inner-page-heading__title">Get In Touch</h2>
                         <ul class="inner-page-heading__breadcrumb">
                             <li><a href="index.html">home</a></li>
-                            <li>Get in Touch</li>
+                            <li class="current-page">Get in Touch</li>
                         </ul>
                     </div>
                 </div>
@@ -129,7 +129,7 @@
 
     <main>
         <!-- --------------- CONTACT INFO SECTION STARTS --------------- -->
-        <section id="contact-info-section">
+        <section id="contact-info-section" class="section-spacing">
             <div class="container">
                 <div class="section-heading">
                     <span class="section-subtitle">OUR ADDRESS</span>
@@ -165,43 +165,36 @@
                     </div>
 
                     <div class="col-xl-6 col-lg-5">
-                        <img src="assets/img/contact/maps.png" alt="map-image" class="contact-info__img">
+                        <section class="contact-form-section">
+                            <h2>Message to us.</h2>
+                            <form action="#" class="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" name="contact-form__first-name" id="contact-form__first-name" placeholder="First Name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="contact-form__last-name" id="contact-form__last-name" placeholder="Last Name">
+                                    </div>
+
+                                    <div class="col-xl-12">
+                                        <input type="email" name="contact-form__email" id="contact-form__email" placeholder="Youremailaddress@here">
+                                    </div>
+
+                                    <div class="col-xl-12">
+                                        <textarea name="contact-form__textarea" id="contact-form__textarea" rows="5" placeholder="Write Your Message to Us..."></textarea>
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <button type="submit" class="btn-custom-1">Send Your Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
                     </div>
                 </div>
             </div>
         </section>
         <!-- --------------- CONTACT INFO SECTION ENDS --------------- -->
-
-
-        <!-- --------------- CONTACT FORM SECTION STARTS --------------- -->
-        <div class="container">
-            <section class="contact-form-section">
-                <h2>Message to us.</h2>
-                <form action="#" class="contact-form">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input type="text" name="contact-form__first-name" id="contact-form__first-name" placeholder="First Name">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" name="contact-form__last-name" id="contact-form__last-name" placeholder="Last Name">
-                        </div>
-
-                        <div class="col-xl-12">
-                            <input type="email" name="contact-form__email" id="contact-form__email" placeholder="Youremailaddress@here">
-                        </div>
-
-                        <div class="col-xl-12">
-                            <textarea name="contact-form__textarea" id="contact-form__textarea" rows="10" placeholder="Write Your Message to Us..."></textarea>
-                        </div>
-
-                        <div class="col-lg-12">
-                            <button type="submit" class="btn-custom-1">Send Your Message</button>
-                        </div>
-                    </div>
-                </form>
-            </section>
-        </div>
-        <!-- --------------- CONTACT FORM SECTION ENDS --------------- -->
     </main>
 
     <!-- --------------- FOOTER SECTION STARTS --------------- -->

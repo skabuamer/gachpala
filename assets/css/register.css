@@ -76,13 +76,13 @@
 }
 @media screen and (max-width: 1199px) {
   .register-form input,
-.register-form textarea {
+  .register-form textarea {
     padding: 15px;
   }
 }
 @media screen and (max-width: 479px) {
   .register-form input,
-.register-form textarea {
+  .register-form textarea {
     padding: 10px 15px;
   }
 }

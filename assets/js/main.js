@@ -20,3 +20,8 @@ document.querySelector(".back__to__top").addEventListener("click", () => {
     window.scrollTo(0, 0);
 });
 /*--------- BACK TO TOP END ---------*/
+
+AOS.init({
+    duration: 1000,
+    once: true,
+});
